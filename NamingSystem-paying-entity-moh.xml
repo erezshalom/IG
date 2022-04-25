@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="paying-entity-moh"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>http://fhir.health.gov.il/NamingSystem/paying-entity-moh</td></tr><tr><td>Version</td><td>4.1.0</td></tr><tr><td>Name</td><td>Payer (Paying Entity / גורם משלם)</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Codes for different paying entities in Israel; including HMOs, IDF, MoD, PLA, Prison system</p>
+</div></td></tr><tr><td>Publisher</td><td>Israeli Ministry of Health</td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td><td><b>Period</b></td><td><b>Comment</b></td></tr><tr><td>URI</td><td>http://fhir.health.gov.il/cs/paying-entity-moh</td><td>true</td><td></td><td/></tr><tr><td>URI</td><td>http://fhir.health.org.il/cs/paying-entity-moh</td><td>false</td><td>(?) --&gt; 2021-07-11</td><td>This value was mistakenly set in the first drafts of ILCore</td></tr></table></div>
+  </text>
+  <name value="Payer (Paying Entity / גורם משלם)"/>
+  <status value="active"/>
+  <kind value="codesystem"/>
+  <date value="2021-07-28"/>
+  <publisher value="Israeli Ministry of Health"/>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="amos@outburn.co.il"/>
+    </telecom>
+  </contact>
+  <responsible value="Israeli Ministry of Health"/>
+  <description value="Codes for different paying entities in Israel; including HMOs, IDF, MoD, PLA, Prison system"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IL"/>
+    </coding>
+  </jurisdiction>
+  <usage value="Codes for different paying entities in Israel; including HMOs, IDF, MoD, PLA, Prison system"/>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="http://fhir.health.gov.il/cs/paying-entity-moh"/>
+    <preferred value="true"/>
+  </uniqueId>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="http://fhir.health.org.il/cs/paying-entity-moh"/>
+    <preferred value="false"/>
+    <comment value="This value was mistakenly set in the first drafts of ILCore"/>
+    <period>
+      <end value="2021-07-11"/>
+    </period>
+  </uniqueId>
+</NamingSystem>

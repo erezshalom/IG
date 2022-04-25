@@ -1,0 +1,63 @@
+{
+  "resourceType": "Patient",
+  "id": "test-myPatient",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/my-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">ddd</div>"
+  },
+  "identifier": [
+    {
+      "use": "old",
+      "system": "http://fhir.health.gov.il/identifier/il-national-id",
+      "value": "000000054"
+    },
+    {
+      "system": "http://fhir.health.gov.il/identifier/il-national-id",
+      "value": "000000018"
+    },
+    {
+      "system": "http://fhir.health.gov.il/identifier/il-national-id",
+      "value": "000000036"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "text": "תddd",
+      "family": "ddd",
+      "given": [
+        "ddd"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "052467911",
+      "use": "home"
+    },
+    {
+      "system": "email",
+      "value": "Israel@example.com"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "2003-04-17",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "use": "home",
+      "type": "physical",
+      "text": "אלכסנדר פן 1א' דירה 4 תל אביב",
+      "line": [
+        "אלכסנדר פן 1א"
+      ],
+      "city": "תל אביב"
+    }
+  ]
+}

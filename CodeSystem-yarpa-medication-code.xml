@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="yarpa-medication-code"/>
+  <language value="he-IL"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="he-IL" lang="he-IL"><p>This code system http://yarpa.co.il/catalog defines many codes, but they are not represented here</p></div>
+  </text>
+  <url value="http://yarpa.co.il/catalog"/>
+  <version value="4.1.0"/>
+  <name value="YarpaMedicationCode"/>
+  <title value="Yarpa Medication Codes"/>
+  <status value="draft"/>
+  <date value="2022-04-25T22:05:39+03:00"/>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="amos@outburn.co.il"/>
+    </telecom>
+  </contact>
+  <description value="Codes for medications according to 'Yarpa' catalogue"/>
+  <valueSet value="http://fhir.health.gov.il/ValueSet/yarpa-medication-code"/>
+  <content value="not-present"/>
+</CodeSystem>

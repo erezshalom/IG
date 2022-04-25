@@ -1,0 +1,12 @@
+{
+  "url": "http://fhir.health.gov.il/ImplementationGuide/attempt1/ImplementationGuide/ILCore",
+  "name": "ILCoreImplementationGuide",
+  "package-id": "ILCore",
+  "ig-ver": "4.1.0",
+  "date": "Mon, 25 Apr, 2022 22:05:39 +0300",
+  "errs": 19,
+  "warnings": 83,
+  "hints": 70,
+  "version": "4.0.1",
+  "tool": "5.0.0-snapshot1 (3)"
+}

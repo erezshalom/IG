@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "id": "statistical-area-uri",
+  "language": "he-IL",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"he-IL\" lang=\"he-IL\"><ul><li>Include these codes as defined in <code>urn:ietf:rfc:3986</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>http://fhir.health.gov.il/identifier/cbs-statistical-area</td><td>Israeli CBS statistical area code</td></tr></table></li></ul></div>"
+  },
+  "url": "http://fhir.health.gov.il/ValueSet/statistical-area-uri",
+  "version": "4.1.0",
+  "name": "StatisticalAreaUri",
+  "title": "Israeli statistical area (אג\"ס) URI",
+  "status": "draft",
+  "date": "2022-04-25T22:05:39+03:00",
+  "contact": [
+    {
+      "name": "Kippi Bordowitz",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "amos@outburn.co.il"
+        }
+      ]
+    }
+  ],
+  "description": "URI's of statistical area identifiers",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:ietf:rfc:3986",
+        "concept": [
+          {
+            "code": "http://fhir.health.gov.il/identifier/cbs-statistical-area",
+            "display": "Israeli CBS statistical area code"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "practitioner-profession-moh",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://fhir.health.gov.il/NamingSystem/practitioner-profession-moh</td></tr><tr><td>Version</td><td>4.1.0</td></tr><tr><td>Name</td><td>קוד מקצוע לעוסק בבריאות</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות</p>\n</div></td></tr><tr><td>Publisher</td><td>Israeli Ministry of Health</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td><td><b>Period</b></td><td><b>Comment</b></td></tr><tr><td>URI</td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>true</td><td></td><td/></tr><tr><td>URI</td><td>http://fhir.health.org.il/cs/practitioner-profession-moh</td><td>false</td><td>(?) --&gt; 2021-07-11</td><td>This value was mistakenly set in the first drafts of ILCore</td></tr></table></div>"
+  },
+  "name": "קוד מקצוע לעוסק בבריאות",
+  "status": "active",
+  "kind": "codesystem",
+  "date": "2021-07-28",
+  "publisher": "Israeli Ministry of Health",
+  "contact": [
+    {
+      "name": "Kippi Bordowitz",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "amos@outburn.co.il"
+        }
+      ]
+    }
+  ],
+  "responsible": "Israeli Ministry of Health",
+  "description": "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "IL"
+        }
+      ]
+    }
+  ],
+  "usage": "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "http://fhir.health.gov.il/cs/practitioner-profession-moh",
+      "preferred": true
+    },
+    {
+      "type": "uri",
+      "value": "http://fhir.health.org.il/cs/practitioner-profession-moh",
+      "preferred": false,
+      "comment": "This value was mistakenly set in the first drafts of ILCore",
+      "period": {
+        "end": "2021-07-11"
+      }
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Patient/patient-immigrant> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "patient-immigrant"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-patient";
+       fhir:index 0;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient - immigrant</div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://fhir.health.gov.il/cs/paying-entity-moh" ];
+         fhir:Coding.code [ fhir:value "103" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "origin" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+           fhir:Coding.code [ fhir:value "USA" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "destination" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+           fhir:Coding.code [ fhir:value "ISR" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "date" ];
+       fhir:Extension.valueDate [ fhir:value "1982-06-30"^^xsd:date ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "status" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://loinc.org/" ];
+           fhir:Coding.code [ fhir:value "LA29155-1" ];
+           fhir:Coding.display [ fhir:value "Naturalized citizen" ]
+         ]
+       ]
+     ];
+     fhir:Extension.url [ fhir:value "http://fhir.health.gov.il/StructureDefinition/ext-patient-immigration" ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://fhir.health.gov.il/identifier/il-national-id" ];
+     fhir:Identifier.value [ fhir:value "000000018" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "הרצל לוי" ];
+     fhir:HumanName.family [ fhir:value "לוי" ];
+     fhir:HumanName.given [
+       fhir:value "הרצל";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "052467911" ];
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "Israel@example.com" ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "1951-04-17"^^xsd:date];
+  fhir:Patient.deceasedBoolean [ fhir:value "false"^^xsd:boolean];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "longitude" ];
+         fhir:Extension.valueDecimal [ fhir:value "34.764885"^^xsd:decimal ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "latitude" ];
+         fhir:Extension.valueDecimal [ fhir:value "32.058317"^^xsd:decimal ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/geolocation" ]
+     ];
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.type [ fhir:value "physical" ];
+     fhir:Address.text [ fhir:value "אילת 34 תל אביב דירה 2" ];
+     fhir:Address.line [
+       fhir:value "אילת 34";
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" ];
+         fhir:Extension.valueString [ fhir:value "אילת" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" ];
+         fhir:Extension.valueString [ fhir:value "34" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID" ];
+         fhir:Extension.valueString [ fhir:value "2" ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox" ];
+         fhir:Extension.valueString [ fhir:value "1446" ]
+       ]
+     ];
+     fhir:Address.city [
+       fhir:value "תל אביב";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://fhir.health.gov.il/StructureDefinition/ext-city-code" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://fhir.health.gov.il/cs/city-symbol" ];
+             fhir:Coding.code [ fhir:value "5000" ]
+           ]
+         ]
+       ]
+     ];
+     fhir:Address.district [ fhir:value "תל אביב" ];
+     fhir:Address.postalCode [ fhir:value "6684501" ];
+     fhir:Address.country [ fhir:value "ISR" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.gov.il/Patient/patient-immigrant.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

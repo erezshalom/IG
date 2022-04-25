@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "medical-service-moh",
+  "language": "he-IL",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"he-IL\" lang=\"he-IL\"><ul><li>Include all codes defined in <a href=\"CodeSystem-medical-service-moh.html\"><code>http://fhir.health.gov.il/cs/medical-service-moh</code></a></li></ul></div>"
+  },
+  "url": "http://fhir.health.gov.il/ValueSet/medical-service-moh",
+  "version": "4.1.0",
+  "name": "MedicalServiceMoH",
+  "title": "קוד מוצר או שירות",
+  "status": "draft",
+  "date": "2022-04-25T22:05:39+03:00",
+  "contact": [
+    {
+      "name": "Kippi Bordowitz",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "amos@outburn.co.il"
+        }
+      ]
+    }
+  ],
+  "description": "קוד שירותים רפואיים , כולל שירותים באשפוז, שירותים אמבולטוריים, רפואת שיניים ובריאות הנפש",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.health.gov.il/cs/medical-service-moh"
+      }
+    ]
+  }
+}

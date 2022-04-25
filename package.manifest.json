@@ -1,0 +1,8 @@
+{
+  "version": "4.1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "date": "20220425220455",
+  "name": "ILCore"
+}

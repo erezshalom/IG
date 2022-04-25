@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Patient/test-myPatient> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "test-myPatient"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.health.gov.il/StructureDefinition/my-patient";
+       fhir:index 0;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/my-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">ddd</div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "old" ];
+     fhir:Identifier.system [ fhir:value "http://fhir.health.gov.il/identifier/il-national-id" ];
+     fhir:Identifier.value [ fhir:value "000000054" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "http://fhir.health.gov.il/identifier/il-national-id" ];
+     fhir:Identifier.value [ fhir:value "000000018" ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.system [ fhir:value "http://fhir.health.gov.il/identifier/il-national-id" ];
+     fhir:Identifier.value [ fhir:value "000000036" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "תddd" ];
+     fhir:HumanName.family [ fhir:value "ddd" ];
+     fhir:HumanName.given [
+       fhir:value "ddd";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "052467911" ];
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "Israel@example.com" ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "2003-04-17"^^xsd:date];
+  fhir:Patient.deceasedBoolean [ fhir:value "false"^^xsd:boolean];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.type [ fhir:value "physical" ];
+     fhir:Address.text [ fhir:value "אלכסנדר פן 1א' דירה 4 תל אביב" ];
+     fhir:Address.line [
+       fhir:value "אלכסנדר פן 1א";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "תל אביב" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.gov.il/Patient/test-myPatient.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

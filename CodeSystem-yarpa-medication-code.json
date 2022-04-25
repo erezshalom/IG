@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "yarpa-medication-code",
+  "language": "he-IL",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"he-IL\" lang=\"he-IL\"><p>This code system http://yarpa.co.il/catalog defines many codes, but they are not represented here</p></div>"
+  },
+  "url": "http://yarpa.co.il/catalog",
+  "version": "4.1.0",
+  "name": "YarpaMedicationCode",
+  "title": "Yarpa Medication Codes",
+  "status": "draft",
+  "date": "2022-04-25T22:05:39+03:00",
+  "contact": [
+    {
+      "name": "Kippi Bordowitz",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "amos@outburn.co.il"
+        }
+      ]
+    }
+  ],
+  "description": "Codes for medications according to 'Yarpa' catalogue",
+  "valueSet": "http://fhir.health.gov.il/ValueSet/yarpa-medication-code",
+  "content": "not-present"
+}

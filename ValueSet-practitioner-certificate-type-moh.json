@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "practitioner-certificate-type-moh",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-practitioner-certificate-type-moh.html\"><code>http://fhir.health.gov.il/cs/practitioner-certificate-type-moh</code></a></li></ul></div>"
+  },
+  "url": "http://fhir.health.gov.il/ValueSet/practitioner-certificate-type-moh",
+  "version": "4.1.0",
+  "name": "PractitionerCertificateTypeMoH",
+  "title": "MoH Certificate Types",
+  "status": "draft",
+  "date": "2022-04-25T22:05:39+03:00",
+  "contact": [
+    {
+      "name": "Kippi Bordowitz",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "amos@outburn.co.il"
+        }
+      ]
+    }
+  ],
+  "description": "A list of codes for certificate types according to Israeli MoH",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"
+      }
+    ]
+  }
+}

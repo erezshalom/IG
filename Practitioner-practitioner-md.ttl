@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Practitioner/practitioner-md> a fhir:Practitioner;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "practitioner-md"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner";
+       fhir:index 0;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-practitioner>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">רופאת משפחה</div>"
+  ];
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://practitioners.health.gov.il/Practitioners" ];
+     fhir:Identifier.value [ fhir:value "1-22947" ]
+  ];
+  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "דר' גרינפלד דיאנה" ];
+     fhir:HumanName.family [ fhir:value "גרינפלד" ];
+     fhir:HumanName.given [
+       fhir:value "דיאנה";
+       fhir:index 0
+     ];
+     fhir:HumanName.prefix [
+       fhir:value "דר'";
+       fhir:index 0
+     ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "04-6421420" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "DG@example.com" ]
+  ];
+  fhir:Practitioner.gender [ fhir:value "female"];
+  fhir:Practitioner.birthDate [ fhir:value "1979-04-30"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.gov.il/Practitioner/practitioner-md.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

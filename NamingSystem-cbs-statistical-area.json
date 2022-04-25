@@ -1,0 +1,54 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "cbs-statistical-area",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://fhir.health.gov.il/NamingSystem/cbs-statistical-area</td></tr><tr><td>Version</td><td>4.1.0</td></tr><tr><td>Name</td><td>Israeli CBS statistical area</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>A number representing the city symbol (4-digits) + statistical area (3 digits) in settelment. 7 digits long. Full CBS number conatins two parts: City symbol + statistical number. E.g.: Jerusalem (3000) 113 area produces -&gt; 3000113</p>\n</div></td></tr><tr><td>Publisher</td><td>Israeli Central Bureau of Statistic</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://fhir.health.gov.il/identifier/cbs-statistical-area</td><td>true</td></tr></table></div>"
+  },
+  "name": "Israeli CBS statistical area",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2021-11-23",
+  "publisher": "Israeli Central Bureau of Statistic",
+  "contact": [
+    {
+      "name": "Kippi Bordowitz",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "amos@outburn.co.il"
+        }
+      ]
+    }
+  ],
+  "responsible": "Israeli CBS",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code": "LI",
+        "display": "Labor and industries number"
+      }
+    ],
+    "text": "National Person Identifier"
+  },
+  "description": "A number representing the city symbol (4-digits) + statistical area (3 digits) in settelment. 7 digits long. Full CBS number conatins two parts: City symbol + statistical number. E.g.: Jerusalem (3000) 113 area produces -> 3000113",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "IL"
+        }
+      ]
+    }
+  ],
+  "usage": "Identifies statistical sub-divisions of cities in Israel as defined by CBS",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "http://fhir.health.gov.il/identifier/cbs-statistical-area",
+      "preferred": true
+    }
+  ]
+}

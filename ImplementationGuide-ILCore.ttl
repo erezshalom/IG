@@ -1,0 +1,1676 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/ImplementationGuide/ILCore> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ILCore"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ILCoreImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.health.gov.il/ImplementationGuide/attempt1/ImplementationGuide/ILCore</pre><div><p>Implementation guide for Israel Core FHIR</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://fhir.health.gov.il/ImplementationGuide/attempt1/ImplementationGuide/ILCore"];
+  fhir:ImplementationGuide.version [ fhir:value "4.1.0"];
+  fhir:ImplementationGuide.name [ fhir:value "ILCoreImplementationGuide"];
+  fhir:ImplementationGuide.title [ fhir:value "IL Core Implementation Guide"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-25T22:05:39+03:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kippi Bordowitz" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "amos@outburn.co.il" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "Implementation guide for Israel Core FHIR"];
+  fhir:ImplementationGuide.packageId [ fhir:value "ILCore"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "hl7_fhir_us_core" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/us/core/ImplementationGuide/ig";
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/ig>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.core" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.1.0" ]
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2020+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "show-inherited-invariants" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "false" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://fhir.health.gov.il/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-address>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-address" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Address Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Adds several Israel-specific extensions, plus geocode to the Address datatype" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-allergy-intolerance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore AllergyIntolerance Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the AllergyIntolerance Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-claim>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-claim" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Claim Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the Claim Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-condition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Condition Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the Condition Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-coverage-eligibility-request>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-coverage-eligibility-request" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore CoverageEligibilityRequest Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the CoverageEligibilityRequest Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-coverage-eligibility-response>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-coverage-eligibility-response" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore CoverageEligibilityResponse Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the CoverageEligibilityResponse Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-device>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Device Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the Device Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-device-definition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-device-definition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore DeviceDefinition Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the DeviceDefinition Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-diagnostic-report>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-diagnostic-report" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore DiagnosticReport Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the DiagnosticReport Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-encounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Encounter Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the Encounter Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-family-member-history>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-family-member-history" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore FamilyMemberHistory Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on theILCoreFamilyMemberHistory Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-group>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-group" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Group Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the Group Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-imaging-study>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-imaging-study" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore ImagingStudy Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the ImagingStudy Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-location>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Location Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the Location Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-media>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-media" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Media Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the Media Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-medication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Medication Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the Medication Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-medication-request>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-medication-request" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore MedicationRequest Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the MedicationRequest  Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-observation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Observation Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the Observation Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Organization Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the Organization Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Patient Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the Patient Resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Practitioner Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the Practitioner Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-practitioner-role" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore PractitionerRole Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the PractitionerRole Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-procedure>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-procedure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Procedure Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the Procedure Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-questionnaire-response>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-questionnaire-response" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore QuestionnaireResponse Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the QuestionnaireResponse Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-related-person>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-related-person" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore RelatedPerson Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on theILCoreRelatedPerson Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-service-request>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-service-request" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore ServiceRequest Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the ServiceRequest Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-specimen>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/il-core-specimen" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ILCore Specimen Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proposed constraints and extensions on the Specimen Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/MyPatient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MyPatient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MyPatient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/ext-city-code>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ext-city-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "City Code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A coded representation of the city, town or settlement" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/ext-il-hmo>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ext-il-hmo" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Israel Health Management Organization (קופת חולים)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension: Israel Health Management Organizations (קופות חולים)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/ext-parent-name>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ext-parent-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Name of parent" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension: The name of a parent" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/ext-patient-immigration>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ext-patient-immigration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Immigration" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension: Immigration information for patient - for the purpose of this extension - immigration is an international movement of a person to a destination country in order to settle as permanent resident" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ext-qualification-practice" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Qualification Practice" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension: Qualification Practice" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/ext-statistical-area>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ext-statistical-area" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Statistical Area" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension: Statistical Area" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/ValueSet/city-symbol>;
+         fhir:Reference.reference [ fhir:value "ValueSet/city-symbol" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "City Symbol (סמל ישוב)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "City classification according to the Israeli Postal Company city-symbol coding system" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/ValueSet/il-core-condition-category>;
+         fhir:Reference.reference [ fhir:value "ValueSet/il-core-condition-category" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IL Core Condition Category Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of category codes for conditions for the IL Core" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/ValueSet/il-core-condition-code>;
+         fhir:Reference.reference [ fhir:value "ValueSet/il-core-condition-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IL Core Condition Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes for conditions for the IL Core" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/ValueSet/vs-patient-relationship-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-patient-relationship-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IL Core Patient Relationship Type codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A set of codes that can be used to indicate the relationship between a Patient and a Related Person." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/ValueSet/institution-type-moh>;
+         fhir:Reference.reference [ fhir:value "ValueSet/institution-type-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "סוג מוסד לפי רישוי משרד הבריאות" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/ValueSet/israel-hmo>;
+         fhir:Reference.reference [ fhir:value "ValueSet/israel-hmo" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Israeli Health Management Organization (קופת חולים)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A code classifying Health Management Organizations" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/ValueSet/medical-service-code>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medical-service-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "קוד מוצר או שירות" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "קוד שירותים רפואיים , כולל שירותים באשפוז, שירותים אמבולטוריים, רפואת שיניים ובריאות הנפש" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/ValueSet/medical-service-moh>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medical-service-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "קוד מוצר או שירות" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "קוד שירותים רפואיים , כולל שירותים באשפוז, שירותים אמבולטוריים, רפואת שיניים ובריאות הנפש" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/ValueSet/passport-uri>;
+         fhir:Reference.reference [ fhir:value "ValueSet/passport-uri" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Passport URIs" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A country specific URI for passport numbers" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/ValueSet/practitioner-certificate-type-moh>;
+         fhir:Reference.reference [ fhir:value "ValueSet/practitioner-certificate-type-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MoH Certificate Types" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes for certificate types according to Israeli MoH" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/ValueSet/practitioner-expertise-moh>;
+         fhir:Reference.reference [ fhir:value "ValueSet/practitioner-expertise-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "קוד מומחיות לעוסק בבריאות" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "קוד מומחיות לעוסק בבריאות לפי רישוי משרד הבריאות" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/ValueSet/practitioner-profession-moh>;
+         fhir:Reference.reference [ fhir:value "ValueSet/practitioner-profession-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "קוד מקצוע לעוסק בבריאות" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/ValueSet/statistical-area-uri>;
+         fhir:Reference.reference [ fhir:value "ValueSet/statistical-area-uri" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Israeli statistical area (אג\"ס) URI" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "URI's of statistical area identifiers" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/ValueSet/yarpa-medication-code>;
+         fhir:Reference.reference [ fhir:value "ValueSet/yarpa-medication-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yarpa Medication Code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for medications according to 'Yarpa' catalogue" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/CodeSystem/city-symbol>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/city-symbol" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "City Symbol (סמל ישוב)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for cities in Israel" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/CodeSystem/institution-type-moh>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/institution-type-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "סוג מוסד לפי רישוי משרד הבריאות" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/CodeSystem/medical-service-moh>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/medical-service-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "קוד מוצר או שירות על פי משרד הבריאות" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "קוד שירותים רפואיים , כולל שירותים באשפוז, שירותים אמבולטוריים, רפואת שיניים ובריאות הנפש \n Codes for medical services. Note that while this code system closely resembles CPT and includes a large number of CPT codes, there are some additional codes that are not covered by CPT and, more importantly, some cases where CPT codes are remapped and have different semantic meanings (e.g., code #28899 has two different meanings in CPT and in MoH codesytem). Therefore, despite apparent resemblance, this code system MUST NOT be treated as CPT." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/CodeSystem/passport-uri>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/passport-uri" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Country Code URIs" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A country specific URI for passport numbers" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/CodeSystem/paying-entity-moh>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/paying-entity-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Payer (Paying Entity / גורם משלם)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for different paying entities in Israel; including HMOs, IDF, MoD, PLA, Prison system" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/CodeSystem/practitioner-certificate-type-moh>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/practitioner-certificate-type-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MoH Certificate Types" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes for certificate types according to Israeli MoH" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/CodeSystem/practitioner-education-moh>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/practitioner-education-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ministry of Health practitioner-education codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for practitioner-education according to Israeli MoH" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/CodeSystem/practitioner-education-type-moh>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/practitioner-education-type-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ministry of Health practitioner-education-type codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for practitioner-education-types according to Israeli MoH" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/CodeSystem/practitioner-expertise-moh>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/practitioner-expertise-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "קוד מומחיות לעוסק בבריאות" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "קוד מומחיות לעוסק בבריאות לפי רישוי משרד הבריאות" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/CodeSystem/practitioner-profession-moh>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/practitioner-profession-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "קוד מקצוע לעוסק בבריאות" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/CodeSystem/yarpa-medication-code>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/yarpa-medication-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yarpa Medication Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for medications according to 'Yarpa' catalogue" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Practitioner/anesthesiologist-with-expertise>;
+         fhir:Reference.reference [ fhir:value "Practitioner/anesthesiologist-with-expertise" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "anesthesiologist-with-expertise" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-practitioner>
+       ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/NamingSystem/cbs-statistical-area>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/cbs-statistical-area" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cbs-statistical-area" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A number representing the city symbol (4-digits) + statistical area (3 digits) in settelment. 7 digits long. Full CBS number conatins two parts: City symbol + statistical number. E.g.: Jerusalem (3000) 113 area produces -> 3000113" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/NamingSystem/city-symbol>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/city-symbol" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "city-symbol" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for cities in Israel" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Condition/condition-burnt-ear>;
+         fhir:Reference.reference [ fhir:value "Condition/condition-burnt-ear" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "condition-burnt-ear" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-condition";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-condition>
+       ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/NamingSystem/il-national-id>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/il-national-id" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "il-national-id" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Israeli Identifier number issued for all citizens and permanent residents. A nine-digit number including a check-digit" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/NamingSystem/institution-type-moh>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/institution-type-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "institution-type-moh" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "סוג מוסד לפי רישוי משרד הבריאות" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/NamingSystem/legal-entity>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/legal-entity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "legal-entity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Israeli legal entity number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Location/location-hospital-unit>;
+         fhir:Reference.reference [ fhir:value "Location/location-hospital-unit" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "location-hospital-unit" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-location";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-location>
+       ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Location/location-hospital-unit-with-kind>;
+         fhir:Reference.reference [ fhir:value "Location/location-hospital-unit-with-kind" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "location-hospital-unit-with-kind" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/NamingSystem/medical-service-moh>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/medical-service-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "medical-service-moh" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "מזהה מוסד לפי רישוי משרד הבריאות" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Organization/organization-ministry-of-health>;
+         fhir:Reference.reference [ fhir:value "Organization/organization-ministry-of-health" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "organization-ministry-of-health" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-organization";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-organization>
+       ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Organization/organization-school-moe>;
+         fhir:Reference.reference [ fhir:value "Organization/organization-school-moe" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "organization-school-moe" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-organization";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-organization>
+       ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/NamingSystem/passport-uri>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/passport-uri" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "passport-uri" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A country specific URI for passport numbers" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Patient/patient-immigrant>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-immigrant" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-immigrant" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-patient";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-patient>
+       ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Patient/patient-israeli-with-statistical-area>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-israeli-with-statistical-area" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-israeli-with-statistical-area" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-patient";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-patient>
+       ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Patient/patient-israeli-with-two-identifiers>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-israeli-with-two-identifiers" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-israeli-with-two-identifiers" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-patient";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-patient>
+       ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Patient/patient-with-israeli-id>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-with-israeli-id" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-with-israeli-id" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-patient";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-patient>
+       ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Patient/patient-with-multiple-birth>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-with-multiple-birth" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-with-multiple-birth" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-patient";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-patient>
+       ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Patient/patient-with-palestinian-id>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-with-palestinian-id" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-with-palestinian-id" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-patient";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-patient>
+       ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Patient/patient-with-passport-identification>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-with-passport-identification" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-with-passport-identification" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-patient";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-patient>
+       ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/NamingSystem/paying-entity-moh>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/paying-entity-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "paying-entity-moh" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for different paying entities in Israel; including HMOs, IDF, MoD, PLA, Prison system" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/NamingSystem/pna-national-id>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/pna-national-id" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "pna-national-id" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Palestinian Identifier number. A nine-digit number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/NamingSystem/practitioner-expertise-moh>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/practitioner-expertise-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-expertise-moh" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "קוד מומחיות לעוסק בבריאות לפי רישוי משרד הבריאות" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Practitioner/practitioner-md>;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-md" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-md" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-practitioner>
+       ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Practitioner/practitioner-nurse>;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-nurse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-nurse" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-practitioner>
+       ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/NamingSystem/practitioner-profession-moh>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/practitioner-profession-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-profession-moh" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Practitioner/practitioner-psychologist>;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-psychologist" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-psychologist" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-practitioner>
+       ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/PractitionerRole/practitionerRole-gp>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/practitionerRole-gp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitionerRole-gp" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role>
+       ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.health.gov.il/Patient/test-myPatient>;
+         fhir:Reference.reference [ fhir:value "Patient/test-myPatient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "test-myPatient" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.health.gov.il/StructureDefinition/my-patient";
+         fhir:link <http://fhir.health.gov.il/StructureDefinition/my-patient>
+       ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.gov.il/ImplementationGuide/ILCore.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

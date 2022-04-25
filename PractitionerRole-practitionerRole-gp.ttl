@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/PractitionerRole/practitionerRole-gp> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "practitionerRole-gp"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role";
+       fhir:index 0;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">רופאת משפחה</div>"
+  ];
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean];
+  fhir:PractitionerRole.practitioner [
+     fhir:link <http://fhir.health.gov.il/Practitioner/GP.1-22947>;
+     fhir:Reference.reference [ fhir:value "Practitioner/GP.1-22947" ]
+  ];
+  fhir:PractitionerRole.location [
+     fhir:index 0;
+     fhir:link <http://fhir.health.gov.il/Location/Rambam>;
+     fhir:Reference.reference [ fhir:value "Location/Rambam" ]
+  ];
+  fhir:PractitionerRole.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "04-6421420" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "DG@example.com" ]
+  ];
+  fhir:PractitionerRole.availableTime [
+     fhir:index 0;
+     fhir:PractitionerRole.availableTime.availableStartTime [ fhir:value "09:00:00"^^xsd:time ];
+     fhir:PractitionerRole.availableTime.availableEndTime [ fhir:value "17:00:00"^^xsd:time ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.gov.il/PractitionerRole/practitionerRole-gp.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

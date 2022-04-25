@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/yarpa-medication-code> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "yarpa-medication-code"];
+  fhir:Resource.language [ fhir:value "he-IL"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"he-IL\" lang=\"he-IL\"><p>This code system http://yarpa.co.il/catalog defines many codes, but they are not represented here</p></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://yarpa.co.il/catalog"];
+  fhir:CodeSystem.version [ fhir:value "4.1.0"];
+  fhir:CodeSystem.name [ fhir:value "YarpaMedicationCode"];
+  fhir:CodeSystem.title [ fhir:value "Yarpa Medication Codes"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2022-04-25T22:05:39+03:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kippi Bordowitz" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "amos@outburn.co.il" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Codes for medications according to 'Yarpa' catalogue"];
+  fhir:CodeSystem.valueSet [
+     fhir:value "http://fhir.health.gov.il/ValueSet/yarpa-medication-code";
+     fhir:link <http://fhir.health.gov.il/ValueSet/yarpa-medication-code>
+  ];
+  fhir:CodeSystem.content [ fhir:value "not-present"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/yarpa-medication-code.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

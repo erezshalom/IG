@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="institution-type-moh"/>
+  <language value="he-IL"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="he-IL" lang="he-IL"><ul><li>Include all codes defined in <a href="CodeSystem-institution-type-moh.html"><code>http://fhir.health.gov.il/cs/institution-type-moh</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/institution-type-moh"/>
+  <version value="4.1.0"/>
+  <name value="InstitutionTypeMoH"/>
+  <title value="סוג מוסד לפי רישוי משרד הבריאות"/>
+  <status value="draft"/>
+  <date value="2022-04-25T22:05:39+03:00"/>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="amos@outburn.co.il"/>
+    </telecom>
+  </contact>
+  <description value="סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות"/>
+  <compose>
+    <include>
+      <system value="http://fhir.health.gov.il/cs/institution-type-moh"/>
+    </include>
+  </compose>
+</ValueSet>

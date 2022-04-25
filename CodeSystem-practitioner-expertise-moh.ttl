@@ -1,0 +1,636 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/practitioner-expertise-moh> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "practitioner-expertise-moh"];
+  fhir:Resource.language [ fhir:value "he-IL"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"he-IL\" lang=\"he-IL\"><p>This code system http://fhir.health.gov.il/cs/practitioner-expertise-moh defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Deprecated</b></td></tr><tr><td style=\"white-space:nowrap\">-999<a name=\"practitioner-expertise-moh--999\"> </a></td><td>לא ידוע</td><td>ערך ברירת מחדל במקרה שערך המומחיות לא קיים מאחר הגיע ריק</td><td>Deprecated</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"practitioner-expertise-moh-0\"> </a></td><td>ללא התמחות</td><td>ערך ברירת מחדל כאשר ידוע כי לאיש המקצוע אין מומחיות מיוחדת במקצוע שלו</td><td/></tr><tr><td style=\"white-space:nowrap\">1<a name=\"practitioner-expertise-moh-1\"> </a></td><td>רפואה פנימית</td><td>מומחיות ברפואה פנימית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">2<a name=\"practitioner-expertise-moh-2\"> </a></td><td>קרדיולוגיה</td><td>מומחיות בקרדיולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">3<a name=\"practitioner-expertise-moh-3\"> </a></td><td>המטולוגיה</td><td>מומחיות בהמטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">4<a name=\"practitioner-expertise-moh-4\"> </a></td><td>אלרגולוגיה ואימונולוגיה קלינית</td><td>מומחיות באלרגולוגיה ואימונולוגיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">5<a name=\"practitioner-expertise-moh-5\"> </a></td><td>מחלות ריאה</td><td>מומחיות במחלות ריאה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">6<a name=\"practitioner-expertise-moh-6\"> </a></td><td>גסטרואנטרולוגיה</td><td>מומחיות בגסטרואנטרולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">7<a name=\"practitioner-expertise-moh-7\"> </a></td><td>אנדוקרינולוגיה</td><td>מומחיות באנדוקרינולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">8<a name=\"practitioner-expertise-moh-8\"> </a></td><td>נפרולוגיה</td><td>מומחיות בנפרולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">9<a name=\"practitioner-expertise-moh-9\"> </a></td><td>רפואת ילדים</td><td>מומחיות ברפואת ילדים שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">10<a name=\"practitioner-expertise-moh-10\"> </a></td><td>נוירולוגיה</td><td>מומחיות בנוירולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">11<a name=\"practitioner-expertise-moh-11\"> </a></td><td>פסיכיאטריה</td><td>מומחיות בפסיכיאטריה שייכת לתחום בריאות הנפשב במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">12<a name=\"practitioner-expertise-moh-12\"> </a></td><td>כירורגיה כללית</td><td>מומחיות בכירורגיה כללית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">13<a name=\"practitioner-expertise-moh-13\"> </a></td><td>נוירוכירורגיה</td><td>מומחיות בנוירוכירורגיה שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">14<a name=\"practitioner-expertise-moh-14\"> </a></td><td>כירורגיה של בית החזה</td><td>מומחיות בכירורגיה של בית החזה שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">15<a name=\"practitioner-expertise-moh-15\"> </a></td><td>כירורגיה אורתופדית</td><td>מומחיות בכירורגיה אורתופדית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">16<a name=\"practitioner-expertise-moh-16\"> </a></td><td>כירורגיה פלסטית</td><td>מומחיות בכירורגיה פלסטית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">17<a name=\"practitioner-expertise-moh-17\"> </a></td><td>כירורגיה אורולוגית</td><td>מומחיות בכירורגיה אורולוגית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">18<a name=\"practitioner-expertise-moh-18\"> </a></td><td>דרמטולוגיה-מחלות עור ומין</td><td>מומחיות בדרמטולוגיה-מחלות עור ומין שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">19<a name=\"practitioner-expertise-moh-19\"> </a></td><td>מחלות אף אוזן וגרון</td><td>מומחיות במחלות אף אוזן וגרון שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">20<a name=\"practitioner-expertise-moh-20\"> </a></td><td>מחלות עיניים</td><td>מומחיות במחלות עיניים שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">21<a name=\"practitioner-expertise-moh-21\"> </a></td><td>הרדמה</td><td>מומחיות בהרדמה שייכת למקצוע הרפואה ולמקצוע רפואת שיניים (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">22<a name=\"practitioner-expertise-moh-22\"> </a></td><td>יילוד וגינקולוגיה</td><td>מומחיות ביילוד וגינקולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">23<a name=\"practitioner-expertise-moh-23\"> </a></td><td>רדיולוגיה אבחנתית</td><td>מומחיות ברדיולוגיה אבחנתית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">24<a name=\"practitioner-expertise-moh-24\"> </a></td><td>אונקולוגיה</td><td>מומחיות באונקולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">25<a name=\"practitioner-expertise-moh-25\"> </a></td><td>רפואת המשפחה</td><td>מומחיות ברפואת המשפחה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">26<a name=\"practitioner-expertise-moh-26\"> </a></td><td>בריאות הציבור</td><td>מומחיות בבריאות הציבור שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">27<a name=\"practitioner-expertise-moh-27\"> </a></td><td>רפואה פיסיקלית ושיקום</td><td>מומחיות ברפואה פיסיקלית ושיקום שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">28<a name=\"practitioner-expertise-moh-28\"> </a></td><td>מיקרוביולוגיה קלינית</td><td>מומחיות במיקרוביולוגיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">29<a name=\"practitioner-expertise-moh-29\"> </a></td><td>כימיה קלינית</td><td>מומחיות בכימיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">30<a name=\"practitioner-expertise-moh-30\"> </a></td><td>אנטומיה פתולוגית</td><td>מומחיות באנטומיה פתולוגית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">31<a name=\"practitioner-expertise-moh-31\"> </a></td><td>רפואה גרעינית</td><td>מומחיות ברפואה גרעינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">32<a name=\"practitioner-expertise-moh-32\"> </a></td><td>גריאטריה</td><td>מומחיות בגריאטריה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">33<a name=\"practitioner-expertise-moh-33\"> </a></td><td>רפואה משפטית</td><td>מומחיות ברפואה משפטית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">34<a name=\"practitioner-expertise-moh-34\"> </a></td><td>פסיכיאטריה של הילד והמתבגר</td><td>מומחיות בפסיכיאטריה של הילד והמתבגר שייכת לתחום בריאות הנפש במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">35<a name=\"practitioner-expertise-moh-35\"> </a></td><td>מנהל רפואי</td><td>מומחיות במנהל רפואי שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">36<a name=\"practitioner-expertise-moh-36\"> </a></td><td>גנטיקה רפואית</td><td>מומחיות בגנטיקה רפואית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">37<a name=\"practitioner-expertise-moh-37\"> </a></td><td>ניאונטולוגיה</td><td>מומחיות בניאונטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">38<a name=\"practitioner-expertise-moh-38\"> </a></td><td>כירורגית ילדים</td><td>מומחיות בכירורגית ילדים שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">39<a name=\"practitioner-expertise-moh-39\"> </a></td><td>כירורגיית פה ולסתות</td><td>מומחיות בכירורגיית פה ולסתות שייכת למקצוע רפואת השיניים (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">40<a name=\"practitioner-expertise-moh-40\"> </a></td><td>פדודונטיה (רפואת שיניים לילדים)</td><td>מומחיות בפדודונטיה (רפואת שיניים לילדים) שייכת למקצוע תרפואת השיניים</td><td/></tr><tr><td style=\"white-space:nowrap\">41<a name=\"practitioner-expertise-moh-41\"> </a></td><td>אורתודונטיה</td><td>מומחיות באורתודונטיה שייכת למקצוע רפואת השיניים</td><td/></tr><tr><td style=\"white-space:nowrap\">42<a name=\"practitioner-expertise-moh-42\"> </a></td><td>פריודונטיה</td><td>מומחיות בפריודונטיה שייכת למקצוע רפואת השיניים</td><td/></tr><tr><td style=\"white-space:nowrap\">43<a name=\"practitioner-expertise-moh-43\"> </a></td><td>אנדודונטיה</td><td>מומחיות באנדודונטיה שייכת למקצוע רפואת השיניים</td><td/></tr><tr><td style=\"white-space:nowrap\">44<a name=\"practitioner-expertise-moh-44\"> </a></td><td>רפואת שיניים ציבורית</td><td>מומחיות ברפואת שיניים ציבורית שייכת למקצוע רפואת השיניים</td><td/></tr><tr><td style=\"white-space:nowrap\">45<a name=\"practitioner-expertise-moh-45\"> </a></td><td>רפואת הפה</td><td>מומחיות ברפואת הפה שייכת למקצוע רפואת השיניים</td><td/></tr><tr><td style=\"white-space:nowrap\">46<a name=\"practitioner-expertise-moh-46\"> </a></td><td>פתולוגיה אורלית</td><td>מומחיות באורתודונטיה שייכת למקצוע רפואת השיניים</td><td/></tr><tr><td style=\"white-space:nowrap\">47<a name=\"practitioner-expertise-moh-47\"> </a></td><td>שיקום פרוסתודונטי(שיקום הפה)</td><td>מומחיות בשיקום פרוסתודונטי(שיקום הפה) שייכת למקצוע רפואת השיניים</td><td/></tr><tr><td style=\"white-space:nowrap\">48<a name=\"practitioner-expertise-moh-48\"> </a></td><td>ראומטולוגיה</td><td>מומחיות בראומטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">49<a name=\"practitioner-expertise-moh-49\"> </a></td><td>כירורגית חזה ולב</td><td>מומחיות בכירורגית חזה ולב שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">51<a name=\"practitioner-expertise-moh-51\"> </a></td><td>כירורגית כלי דם</td><td>מומחיות בכירורגית כלי דם שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">52<a name=\"practitioner-expertise-moh-52\"> </a></td><td>כירורגיה של היד</td><td>מומחיתו בכירורגיה של היד שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style=\"white-space:nowrap\">53<a name=\"practitioner-expertise-moh-53\"> </a></td><td>פסיכולוגיה חברתית-תעסוקתית-ארגונית</td><td>מומחיות בפסיכולוגיה חברתית-תעסוקתית-ארגונית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style=\"white-space:nowrap\">54<a name=\"practitioner-expertise-moh-54\"> </a></td><td>פסיכולוגיה חינוכית</td><td>מומחיות בפסיכולוגיה חינוכית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style=\"white-space:nowrap\">55<a name=\"practitioner-expertise-moh-55\"> </a></td><td>פסיכולוגיה קלינית</td><td>מומחיות בפסיכולוגיה קלינית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style=\"white-space:nowrap\">56<a name=\"practitioner-expertise-moh-56\"> </a></td><td>פסיכולוגיה קלינית באבחון</td><td>מומחיות בפסיכולוגיה קלינית באבחון שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style=\"white-space:nowrap\">57<a name=\"practitioner-expertise-moh-57\"> </a></td><td>פסיכולוגיה קלינית בטיפול</td><td>מומחיות בפסיכולוגיה קלינית בטיפול שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style=\"white-space:nowrap\">58<a name=\"practitioner-expertise-moh-58\"> </a></td><td>פסיכולוגיה שיקומית</td><td>מומחיות בפסיכולוגיה שיקומית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style=\"white-space:nowrap\">59<a name=\"practitioner-expertise-moh-59\"> </a></td><td>רפואה תעסוקתית שייכת למקצוע הרפואה</td><td>מומחיות ברפואה תעסוקתית </td><td/></tr><tr><td style=\"white-space:nowrap\">60<a name=\"practitioner-expertise-moh-60\"> </a></td><td>פסיכולוגיה התפתחותית</td><td>פסיכולוגיה התפתחותית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style=\"white-space:nowrap\">61<a name=\"practitioner-expertise-moh-61\"> </a></td><td>פסיכולוגיה קלינית באבחון ובטיפול</td><td>פסיכולוגיה קלינית באבחון ובטיפול שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style=\"white-space:nowrap\">63<a name=\"practitioner-expertise-moh-63\"> </a></td><td>מקצועות מעבדה קליניים</td><td>מומחיות במקצועות מעבדה קליניים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">64<a name=\"practitioner-expertise-moh-64\"> </a></td><td>מחלות זיהומיות</td><td>מומחיות במחלות זיהומיות שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">65<a name=\"practitioner-expertise-moh-65\"> </a></td><td>טיפול נמרץ כללי</td><td>מומחיות בטיפול נמרץ כללי  שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">66<a name=\"practitioner-expertise-moh-66\"> </a></td><td>נוירולוגיית ילדים</td><td>מומחיות בנוירולוגיית ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">67<a name=\"practitioner-expertise-moh-67\"> </a></td><td>גאסטרואנטרולוגיה ילדים</td><td>מומחיות בגאסטרואנטרולוגיה ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">68<a name=\"practitioner-expertise-moh-68\"> </a></td><td>מחלות ריאה ילדים</td><td>מומחיות במחלות ריאה ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">69<a name=\"practitioner-expertise-moh-69\"> </a></td><td>הימטואונקולוגיה ילדים</td><td>מומחיות בהימטואונקולוגיה ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">70<a name=\"practitioner-expertise-moh-70\"> </a></td><td>קרדיולוגיה ילדים</td><td>מומחיות בקרדיולוגיה ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">71<a name=\"practitioner-expertise-moh-71\"> </a></td><td>אימונולוגיה קלינית ילדים</td><td>מומחיות באימונולוגיה קלינית ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">72<a name=\"practitioner-expertise-moh-72\"> </a></td><td>אלרגולוגיה ילדים</td><td>מומחיות באלרגולוגיה ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">73<a name=\"practitioner-expertise-moh-73\"> </a></td><td>נפרולוגיה ילדים</td><td>מומחיות בנפרולוגיה ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">74<a name=\"practitioner-expertise-moh-74\"> </a></td><td>אנדוקרינולוגיה ילדים</td><td>מומחיות באנדוקרינולוגיה ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">75<a name=\"practitioner-expertise-moh-75\"> </a></td><td>איבחון או טיפול רפואי</td><td>מומחיות באיבחון או טיפול רפואי  שייכת למקצוע הרפואה וכמו כן למקצוע רפואת השיניים</td><td/></tr><tr><td style=\"white-space:nowrap\">76<a name=\"practitioner-expertise-moh-76\"> </a></td><td>איבחון או טיפול פסיכולוגי</td><td>מומחיות באיבחון או טיפול פסיכולוגי שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style=\"white-space:nowrap\">77<a name=\"practitioner-expertise-moh-77\"> </a></td><td>מחקר מדעי בהיפנוזה</td><td>מומחיות במחקר מדעי בהיפנוזה שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג</td><td/></tr><tr><td style=\"white-space:nowrap\">78<a name=\"practitioner-expertise-moh-78\"> </a></td><td>הוראה מדעית בתחום ההיפנוזה</td><td>מומחיות בהוראה מדעית בתחום ההיפנוזה שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג</td><td/></tr><tr><td style=\"white-space:nowrap\">79<a name=\"practitioner-expertise-moh-79\"> </a></td><td>רענון זכרון במהלך חקירה משטרתית/בטחונית</td><td>מומחיות ברענון זכרון במהלך חקירה משטרתית/בטחונית  שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג</td><td/></tr><tr><td style=\"white-space:nowrap\">80<a name=\"practitioner-expertise-moh-80\"> </a></td><td>טיפול נמרץ ילדים</td><td>מומחיות בטיפול נמרץ ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">81<a name=\"practitioner-expertise-moh-81\"> </a></td><td>פרמקולוגיה קלינית</td><td>מומחיות בפרמקולוגיה קלינית שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">82<a name=\"practitioner-expertise-moh-82\"> </a></td><td>רפואה דחופה</td><td>מומחיות ברפואה דחופה שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">83<a name=\"practitioner-expertise-moh-83\"> </a></td><td>פסיכולוגיה רפואית</td><td>מומחיות בפסיכולוגיה רפואית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style=\"white-space:nowrap\">84<a name=\"practitioner-expertise-moh-84\"> </a></td><td>מחלות א.א.ג. וכירורגיית ראש-צוואר</td><td>מומחיות במחלות א.א.ג. וכירורגיית ראש-צוואר  שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">85<a name=\"practitioner-expertise-moh-85\"> </a></td><td>כירורגית לב</td><td>מומחיות בכירורגית לב שייכת לתחום הכירורגיה במקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">86<a name=\"practitioner-expertise-moh-86\"> </a></td><td>שיקום הפה ושיקום פנים ולסתות</td><td>מומחיות בשיקום הפה ושיקום פנים ולסתות שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">87<a name=\"practitioner-expertise-moh-87\"> </a></td><td>ציטוגנטיקה קלינית</td><td>מומחיות בציטוגנטיקה קלינית שייכת למקצוע הגנטיקה קלינית- יעוץ גנטי</td><td/></tr><tr><td style=\"white-space:nowrap\">88<a name=\"practitioner-expertise-moh-88\"> </a></td><td>גנטיקה קלינית מוליקולרית/ביוכימית</td><td>גנטיקה קלינית מוליקולרית/ביוכימית שייכת למקצוע הגנטיקה קלינית- יעוץ גנטי</td><td/></tr><tr><td style=\"white-space:nowrap\">89<a name=\"practitioner-expertise-moh-89\"> </a></td><td>ייעוץ גנטי</td><td>מומחיות בייעוץ גנטי שייכך למקצוע הגנטיקה קלינית- יעוץ גנטי</td><td/></tr><tr><td style=\"white-space:nowrap\">90<a name=\"practitioner-expertise-moh-90\"> </a></td><td>נוירולוגית ילדים והתפתחות הילד</td><td>מומחיות בנוירולוגית ילדים והתפתחות הילד שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">91<a name=\"practitioner-expertise-moh-91\"> </a></td><td>טיפול תומך</td><td>מומחיות בטיפול תומך שייכת לתחום הסיעוד במקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style=\"white-space:nowrap\">92<a name=\"practitioner-expertise-moh-92\"> </a></td><td>אונקולוגיה - מסלול אונקולוגיה רפואית</td><td>מומחיות באונקולוגיה - מסלול אונקולוגיה רפואית שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">93<a name=\"practitioner-expertise-moh-93\"> </a></td><td>אונקולוגיה - מסלול רדיותרפיה</td><td>מומחיות באונקולוגיה - מסלול רדיותרפיה שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">94<a name=\"practitioner-expertise-moh-94\"> </a></td><td>טיפול נמרץ קרדיולוגי</td><td>מומחיות בטיפול נמרץ קרדיולוגי שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">95<a name=\"practitioner-expertise-moh-95\"> </a></td><td>כירורגית בית החזה - מסלול כירורגית חזה כללית</td><td>מומחיות בכירורגית בית החזה - מסלול כירורגית חזה כללית שייכת לתחום הכירורגיה במקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">96<a name=\"practitioner-expertise-moh-96\"> </a></td><td>כירורגית בית החזה - מסלול כירורגית לב וכירורגית חזה כללית</td><td>מומחיות בכירורגית בית החזה - מסלול כירורגית לב וכירורגית חזה כללית שייכת לתחום הכירורגיה במקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">97<a name=\"practitioner-expertise-moh-97\"> </a></td><td>כירורגית בית החזה - מסלול כירורגית לב</td><td>מומחיות בכירורגית בית החזה - מסלול כירורגית לב שייכת לתחום הכירורגיה במקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">98<a name=\"practitioner-expertise-moh-98\"> </a></td><td>רפואה לשיכוך כאב</td><td>מומחיות ברפואה לשיכוך כאב שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">99<a name=\"practitioner-expertise-moh-99\"> </a></td><td>רפואה דחופה - מסלול מבוגרים</td><td>מומחיות ברפואה דחופה - מסלול מבוגרים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">100<a name=\"practitioner-expertise-moh-100\"> </a></td><td>רפואה דחופה - מסלול ילדים</td><td>מומחיות ברפואה דחופה - מסלול ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">101<a name=\"practitioner-expertise-moh-101\"> </a></td><td>CBT פסיכותרפיה</td><td>מומחיות בCBT פסיכותרפיה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style=\"white-space:nowrap\">102<a name=\"practitioner-expertise-moh-102\"> </a></td><td>סוכרת</td><td>מומחיות בסוכרת שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style=\"white-space:nowrap\">103<a name=\"practitioner-expertise-moh-103\"> </a></td><td>גריאטריה</td><td>מומחיות בגריאטריה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style=\"white-space:nowrap\">104<a name=\"practitioner-expertise-moh-104\"> </a></td><td>רפואה פליאטיבית</td><td>מומחיות ברפואה פליאטיבית שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">105<a name=\"practitioner-expertise-moh-105\"> </a></td><td>בריאות הציבור מסלול אפידמיולוגיה</td><td>מומחיות בבריאות הציבור מסלול אפידמיולוגיה שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">106<a name=\"practitioner-expertise-moh-106\"> </a></td><td>ביוכימיה קלינית</td><td>מומחיות בביוכימיה קלינית שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">107<a name=\"practitioner-expertise-moh-107\"> </a></td><td>מחלות זיהומיות ילדים</td><td>מומחיות במחלות זיהומיות ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">108<a name=\"practitioner-expertise-moh-108\"> </a></td><td>פגים</td><td>מומחיות בפגים שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style=\"white-space:nowrap\">109<a name=\"practitioner-expertise-moh-109\"> </a></td><td>כירורגיה</td><td>מומחיות בכירורגיה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style=\"white-space:nowrap\">110<a name=\"practitioner-expertise-moh-110\"> </a></td><td>בריאות הציבור במסלול שירותים קהילתיים</td><td>מומחיות בבריאות הציבור במסלול שירותים קהילתיים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">112<a name=\"practitioner-expertise-moh-112\"> </a></td><td>כאב</td><td>מומחיות בכאב שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style=\"white-space:nowrap\">113<a name=\"practitioner-expertise-moh-113\"> </a></td><td>שיקום</td><td>מומחיות בשיקום שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style=\"white-space:nowrap\">114<a name=\"practitioner-expertise-moh-114\"> </a></td><td>מדיניות ומינהל בסיעוד</td><td>מומחיות במדיניות ומינהל בסיעוד שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style=\"white-space:nowrap\">115<a name=\"practitioner-expertise-moh-115\"> </a></td><td>רפואה ראשונית</td><td>מומחיות ברפואה ראשונית שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style=\"white-space:nowrap\">116<a name=\"practitioner-expertise-moh-116\"> </a></td><td>נוירופסיכאטריה</td><td>מומחיות בנוירופסיכאטריה שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">117<a name=\"practitioner-expertise-moh-117\"> </a></td><td>ראומטולוגיה מסלול ילדים</td><td>מומחיות בראומטולוגיה מסלול ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">150<a name=\"practitioner-expertise-moh-150\"> </a></td><td>פנימית</td><td>מומחיות בפנימית שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://fhir.health.gov.il/cs/practitioner-expertise-moh"];
+  fhir:CodeSystem.version [ fhir:value "4.1.0"];
+  fhir:CodeSystem.name [ fhir:value "PractitionerExpertiseMoH"];
+  fhir:CodeSystem.title [ fhir:value "קוד מומחיות לעוסק בבריאות"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2022-04-25T22:05:39+03:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kippi Bordowitz" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "amos@outburn.co.il" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "קוד מומחיות לעוסק בבריאות לפי רישוי משרד הבריאות"];
+  fhir:CodeSystem.valueSet [
+     fhir:value "http://fhir.health.gov.il/ValueSet/practitioner-expertise-moh";
+     fhir:link <http://fhir.health.gov.il/ValueSet/practitioner-expertise-moh>
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "117"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "-999" ];
+     fhir:CodeSystem.concept.display [ fhir:value "לא ידוע" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "ערך ברירת מחדל במקרה שערך המומחיות לא קיים מאחר הגיע ריק" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "status" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "deprecated" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ללא התמחות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "ערך ברירת מחדל כאשר ידוע כי לאיש המקצוע אין מומחיות מיוחדת במקצוע שלו" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה פנימית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואה פנימית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "קרדיולוגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בקרדיולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "המטולוגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בהמטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אלרגולוגיה ואימונולוגיה קלינית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות באלרגולוגיה ואימונולוגיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מחלות ריאה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות במחלות ריאה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "גסטרואנטרולוגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בגסטרואנטרולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אנדוקרינולוגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות באנדוקרינולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "נפרולוגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בנפרולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואת ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואת ילדים שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "נוירולוגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בנוירולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פסיכיאטריה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בפסיכיאטריה שייכת לתחום בריאות הנפשב במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגיה כללית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכירורגיה כללית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "13" ];
+     fhir:CodeSystem.concept.display [ fhir:value "נוירוכירורגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בנוירוכירורגיה שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "14" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגיה של בית החזה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכירורגיה של בית החזה שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "15" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגיה אורתופדית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכירורגיה אורתופדית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "16" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגיה פלסטית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכירורגיה פלסטית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "17" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגיה אורולוגית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכירורגיה אורולוגית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "18" ];
+     fhir:CodeSystem.concept.display [ fhir:value "דרמטולוגיה-מחלות עור ומין" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בדרמטולוגיה-מחלות עור ומין שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "19" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מחלות אף אוזן וגרון" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות במחלות אף אוזן וגרון שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "20" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מחלות עיניים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות במחלות עיניים שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "21" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הרדמה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בהרדמה שייכת למקצוע הרפואה ולמקצוע רפואת שיניים (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "22" ];
+     fhir:CodeSystem.concept.display [ fhir:value "יילוד וגינקולוגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ביילוד וגינקולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "23" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רדיולוגיה אבחנתית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברדיולוגיה אבחנתית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "24" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אונקולוגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות באונקולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "25" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואת המשפחה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואת המשפחה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "26" ];
+     fhir:CodeSystem.concept.display [ fhir:value "בריאות הציבור" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בבריאות הציבור שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "27" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה פיסיקלית ושיקום" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואה פיסיקלית ושיקום שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "28" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מיקרוביולוגיה קלינית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות במיקרוביולוגיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "29" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כימיה קלינית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכימיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "30" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אנטומיה פתולוגית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות באנטומיה פתולוגית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "31" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה גרעינית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואה גרעינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "32" ];
+     fhir:CodeSystem.concept.display [ fhir:value "גריאטריה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בגריאטריה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "33" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה משפטית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואה משפטית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "34" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פסיכיאטריה של הילד והמתבגר" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בפסיכיאטריה של הילד והמתבגר שייכת לתחום בריאות הנפש במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "35" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מנהל רפואי" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות במנהל רפואי שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "36" ];
+     fhir:CodeSystem.concept.display [ fhir:value "גנטיקה רפואית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בגנטיקה רפואית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "37" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ניאונטולוגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בניאונטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "38" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגית ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכירורגית ילדים שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "39" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגיית פה ולסתות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכירורגיית פה ולסתות שייכת למקצוע רפואת השיניים (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "40" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פדודונטיה (רפואת שיניים לילדים)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בפדודונטיה (רפואת שיניים לילדים) שייכת למקצוע תרפואת השיניים" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "41" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אורתודונטיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות באורתודונטיה שייכת למקצוע רפואת השיניים" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "42" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פריודונטיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בפריודונטיה שייכת למקצוע רפואת השיניים" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "43" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אנדודונטיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות באנדודונטיה שייכת למקצוע רפואת השיניים" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "44" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואת שיניים ציבורית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואת שיניים ציבורית שייכת למקצוע רפואת השיניים" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "45" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואת הפה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואת הפה שייכת למקצוע רפואת השיניים" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "46" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פתולוגיה אורלית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות באורתודונטיה שייכת למקצוע רפואת השיניים" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "47" ];
+     fhir:CodeSystem.concept.display [ fhir:value "שיקום פרוסתודונטי(שיקום הפה)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בשיקום פרוסתודונטי(שיקום הפה) שייכת למקצוע רפואת השיניים" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "48" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ראומטולוגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בראומטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "49" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגית חזה ולב" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכירורגית חזה ולב שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "51" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגית כלי דם" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכירורגית כלי דם שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "52" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגיה של היד" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיתו בכירורגיה של היד שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "53" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פסיכולוגיה חברתית-תעסוקתית-ארגונית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בפסיכולוגיה חברתית-תעסוקתית-ארגונית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "54" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פסיכולוגיה חינוכית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בפסיכולוגיה חינוכית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "55" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פסיכולוגיה קלינית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בפסיכולוגיה קלינית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "56" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פסיכולוגיה קלינית באבחון" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בפסיכולוגיה קלינית באבחון שייכת לתחום בריאות הנפש במקצוע הפסיכולוג" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "57" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פסיכולוגיה קלינית בטיפול" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בפסיכולוגיה קלינית בטיפול שייכת לתחום בריאות הנפש במקצוע הפסיכולוג" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "58" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פסיכולוגיה שיקומית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בפסיכולוגיה שיקומית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "59" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה תעסוקתית שייכת למקצוע הרפואה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואה תעסוקתית " ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "60" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פסיכולוגיה התפתחותית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "פסיכולוגיה התפתחותית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "61" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פסיכולוגיה קלינית באבחון ובטיפול" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "פסיכולוגיה קלינית באבחון ובטיפול שייכת לתחום בריאות הנפש במקצוע הפסיכולוג" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "63" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מקצועות מעבדה קליניים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות במקצועות מעבדה קליניים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "64" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מחלות זיהומיות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות במחלות זיהומיות שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "65" ];
+     fhir:CodeSystem.concept.display [ fhir:value "טיפול נמרץ כללי" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בטיפול נמרץ כללי  שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "66" ];
+     fhir:CodeSystem.concept.display [ fhir:value "נוירולוגיית ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בנוירולוגיית ילדים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "67" ];
+     fhir:CodeSystem.concept.display [ fhir:value "גאסטרואנטרולוגיה ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בגאסטרואנטרולוגיה ילדים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "68" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מחלות ריאה ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות במחלות ריאה ילדים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "69" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הימטואונקולוגיה ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בהימטואונקולוגיה ילדים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "70" ];
+     fhir:CodeSystem.concept.display [ fhir:value "קרדיולוגיה ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בקרדיולוגיה ילדים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "71" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אימונולוגיה קלינית ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות באימונולוגיה קלינית ילדים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "72" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אלרגולוגיה ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות באלרגולוגיה ילדים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "73" ];
+     fhir:CodeSystem.concept.display [ fhir:value "נפרולוגיה ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בנפרולוגיה ילדים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "74" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אנדוקרינולוגיה ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות באנדוקרינולוגיה ילדים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "75" ];
+     fhir:CodeSystem.concept.display [ fhir:value "איבחון או טיפול רפואי" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות באיבחון או טיפול רפואי  שייכת למקצוע הרפואה וכמו כן למקצוע רפואת השיניים" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "76" ];
+     fhir:CodeSystem.concept.display [ fhir:value "איבחון או טיפול פסיכולוגי" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות באיבחון או טיפול פסיכולוגי שייכת לתחום בריאות הנפש במקצוע הפסיכולוג" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "77" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מחקר מדעי בהיפנוזה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות במחקר מדעי בהיפנוזה שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "78" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הוראה מדעית בתחום ההיפנוזה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בהוראה מדעית בתחום ההיפנוזה שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג" ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "79" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רענון זכרון במהלך חקירה משטרתית/בטחונית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברענון זכרון במהלך חקירה משטרתית/בטחונית  שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג" ]
+  ], [
+     fhir:index 79;
+     fhir:CodeSystem.concept.code [ fhir:value "80" ];
+     fhir:CodeSystem.concept.display [ fhir:value "טיפול נמרץ ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בטיפול נמרץ ילדים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 80;
+     fhir:CodeSystem.concept.code [ fhir:value "81" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פרמקולוגיה קלינית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בפרמקולוגיה קלינית שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 81;
+     fhir:CodeSystem.concept.code [ fhir:value "82" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה דחופה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואה דחופה שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 82;
+     fhir:CodeSystem.concept.code [ fhir:value "83" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פסיכולוגיה רפואית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בפסיכולוגיה רפואית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג" ]
+  ], [
+     fhir:index 83;
+     fhir:CodeSystem.concept.code [ fhir:value "84" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מחלות א.א.ג. וכירורגיית ראש-צוואר" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות במחלות א.א.ג. וכירורגיית ראש-צוואר  שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 84;
+     fhir:CodeSystem.concept.code [ fhir:value "85" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגית לב" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכירורגית לב שייכת לתחום הכירורגיה במקצוע הרפואה" ]
+  ], [
+     fhir:index 85;
+     fhir:CodeSystem.concept.code [ fhir:value "86" ];
+     fhir:CodeSystem.concept.display [ fhir:value "שיקום הפה ושיקום פנים ולסתות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בשיקום הפה ושיקום פנים ולסתות שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 86;
+     fhir:CodeSystem.concept.code [ fhir:value "87" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ציטוגנטיקה קלינית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בציטוגנטיקה קלינית שייכת למקצוע הגנטיקה קלינית- יעוץ גנטי" ]
+  ], [
+     fhir:index 87;
+     fhir:CodeSystem.concept.code [ fhir:value "88" ];
+     fhir:CodeSystem.concept.display [ fhir:value "גנטיקה קלינית מוליקולרית/ביוכימית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "גנטיקה קלינית מוליקולרית/ביוכימית שייכת למקצוע הגנטיקה קלינית- יעוץ גנטי" ]
+  ], [
+     fhir:index 88;
+     fhir:CodeSystem.concept.code [ fhir:value "89" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ייעוץ גנטי" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בייעוץ גנטי שייכך למקצוע הגנטיקה קלינית- יעוץ גנטי" ]
+  ], [
+     fhir:index 89;
+     fhir:CodeSystem.concept.code [ fhir:value "90" ];
+     fhir:CodeSystem.concept.display [ fhir:value "נוירולוגית ילדים והתפתחות הילד" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בנוירולוגית ילדים והתפתחות הילד שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 90;
+     fhir:CodeSystem.concept.code [ fhir:value "91" ];
+     fhir:CodeSystem.concept.display [ fhir:value "טיפול תומך" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בטיפול תומך שייכת לתחום הסיעוד במקצוע אח/ות מוסמכ/ת" ]
+  ], [
+     fhir:index 91;
+     fhir:CodeSystem.concept.code [ fhir:value "92" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אונקולוגיה - מסלול אונקולוגיה רפואית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות באונקולוגיה - מסלול אונקולוגיה רפואית שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 92;
+     fhir:CodeSystem.concept.code [ fhir:value "93" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אונקולוגיה - מסלול רדיותרפיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות באונקולוגיה - מסלול רדיותרפיה שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 93;
+     fhir:CodeSystem.concept.code [ fhir:value "94" ];
+     fhir:CodeSystem.concept.display [ fhir:value "טיפול נמרץ קרדיולוגי" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בטיפול נמרץ קרדיולוגי שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 94;
+     fhir:CodeSystem.concept.code [ fhir:value "95" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגית בית החזה - מסלול כירורגית חזה כללית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכירורגית בית החזה - מסלול כירורגית חזה כללית שייכת לתחום הכירורגיה במקצוע הרפואה" ]
+  ], [
+     fhir:index 95;
+     fhir:CodeSystem.concept.code [ fhir:value "96" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגית בית החזה - מסלול כירורגית לב וכירורגית חזה כללית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכירורגית בית החזה - מסלול כירורגית לב וכירורגית חזה כללית שייכת לתחום הכירורגיה במקצוע הרפואה" ]
+  ], [
+     fhir:index 96;
+     fhir:CodeSystem.concept.code [ fhir:value "97" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגית בית החזה - מסלול כירורגית לב" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכירורגית בית החזה - מסלול כירורגית לב שייכת לתחום הכירורגיה במקצוע הרפואה" ]
+  ], [
+     fhir:index 97;
+     fhir:CodeSystem.concept.code [ fhir:value "98" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה לשיכוך כאב" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואה לשיכוך כאב שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 98;
+     fhir:CodeSystem.concept.code [ fhir:value "99" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה דחופה - מסלול מבוגרים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואה דחופה - מסלול מבוגרים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 99;
+     fhir:CodeSystem.concept.code [ fhir:value "100" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה דחופה - מסלול ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואה דחופה - מסלול ילדים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 100;
+     fhir:CodeSystem.concept.code [ fhir:value "101" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CBT פסיכותרפיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בCBT פסיכותרפיה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת" ]
+  ], [
+     fhir:index 101;
+     fhir:CodeSystem.concept.code [ fhir:value "102" ];
+     fhir:CodeSystem.concept.display [ fhir:value "סוכרת" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בסוכרת שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת" ]
+  ], [
+     fhir:index 102;
+     fhir:CodeSystem.concept.code [ fhir:value "103" ];
+     fhir:CodeSystem.concept.display [ fhir:value "גריאטריה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בגריאטריה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת" ]
+  ], [
+     fhir:index 103;
+     fhir:CodeSystem.concept.code [ fhir:value "104" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה פליאטיבית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואה פליאטיבית שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 104;
+     fhir:CodeSystem.concept.code [ fhir:value "105" ];
+     fhir:CodeSystem.concept.display [ fhir:value "בריאות הציבור מסלול אפידמיולוגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בבריאות הציבור מסלול אפידמיולוגיה שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 105;
+     fhir:CodeSystem.concept.code [ fhir:value "106" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ביוכימיה קלינית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בביוכימיה קלינית שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 106;
+     fhir:CodeSystem.concept.code [ fhir:value "107" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מחלות זיהומיות ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות במחלות זיהומיות ילדים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 107;
+     fhir:CodeSystem.concept.code [ fhir:value "108" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פגים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בפגים שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת" ]
+  ], [
+     fhir:index 108;
+     fhir:CodeSystem.concept.code [ fhir:value "109" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כירורגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכירורגיה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת" ]
+  ], [
+     fhir:index 109;
+     fhir:CodeSystem.concept.code [ fhir:value "110" ];
+     fhir:CodeSystem.concept.display [ fhir:value "בריאות הציבור במסלול שירותים קהילתיים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בבריאות הציבור במסלול שירותים קהילתיים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 110;
+     fhir:CodeSystem.concept.code [ fhir:value "112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "כאב" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בכאב שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת" ]
+  ], [
+     fhir:index 111;
+     fhir:CodeSystem.concept.code [ fhir:value "113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "שיקום" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בשיקום שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת" ]
+  ], [
+     fhir:index 112;
+     fhir:CodeSystem.concept.code [ fhir:value "114" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מדיניות ומינהל בסיעוד" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות במדיניות ומינהל בסיעוד שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת" ]
+  ], [
+     fhir:index 113;
+     fhir:CodeSystem.concept.code [ fhir:value "115" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה ראשונית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות ברפואה ראשונית שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת" ]
+  ], [
+     fhir:index 114;
+     fhir:CodeSystem.concept.code [ fhir:value "116" ];
+     fhir:CodeSystem.concept.display [ fhir:value "נוירופסיכאטריה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בנוירופסיכאטריה שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 115;
+     fhir:CodeSystem.concept.code [ fhir:value "117" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ראומטולוגיה מסלול ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בראומטולוגיה מסלול ילדים שייכת למקצוע הרפואה" ]
+  ], [
+     fhir:index 116;
+     fhir:CodeSystem.concept.code [ fhir:value "150" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פנימית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות בפנימית שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/practitioner-expertise-moh.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

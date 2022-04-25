@@ -1,0 +1,357 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/practitioner-certificate-type-moh> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "practitioner-certificate-type-moh"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://fhir.health.gov.il/cs/practitioner-certificate-type-moh defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"practitioner-certificate-type-moh-1\"> </a></td><td>רשיון זמני</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"practitioner-certificate-type-moh-2\"> </a></td><td>רשיון קבוע</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"practitioner-certificate-type-moh-3\"> </a></td><td>תעודת הכרה זמנית</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"practitioner-certificate-type-moh-4\"> </a></td><td>תעודת הכרה</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"practitioner-certificate-type-moh-5\"> </a></td><td>תעודת מומחה</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"practitioner-certificate-type-moh-6\"> </a></td><td>היתר מוגבל למומחה</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"practitioner-certificate-type-moh-7\"> </a></td><td>סטז'</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"practitioner-certificate-type-moh-8\"> </a></td><td>אישור הכרה</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"practitioner-certificate-type-moh-9\"> </a></td><td>היתר לניהול מעבדה רפואית</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"practitioner-certificate-type-moh-10\"> </a></td><td>היתר מוגבל למשתלם</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"practitioner-certificate-type-moh-11\"> </a></td><td>הרשאה מוגבלת למומחה</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"practitioner-certificate-type-moh-12\"> </a></td><td>פטור לתלמיד רפואה</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"practitioner-certificate-type-moh-13\"> </a></td><td>תעודת מדריך</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"practitioner-certificate-type-moh-14\"> </a></td><td>פטור לפי סעיף 59(14 שנה)</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"practitioner-certificate-type-moh-15\"> </a></td><td>אישור לרכישת סטג' ל-6 חודשים</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"practitioner-certificate-type-moh-16\"> </a></td><td>התקן תוך רחמי</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"practitioner-certificate-type-moh-17\"> </a></td><td>העתק רשיון קבוע</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"practitioner-certificate-type-moh-18\"> </a></td><td>העתק תעודת הכרה</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"practitioner-certificate-type-moh-19\"> </a></td><td>היתר לתושבים זרים</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"practitioner-certificate-type-moh-20\"> </a></td><td>הרשאה לסטז  לבוגרי חו&quot;ל</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"practitioner-certificate-type-moh-21\"> </a></td><td>העתק רשיון למומחה</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"practitioner-certificate-type-moh-22\"> </a></td><td>היתר מוגבל למומחה באופטלמולוגיה</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"practitioner-certificate-type-moh-23\"> </a></td><td>היתר מוגבל למומחה בניתוחי לב ילדים</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"practitioner-certificate-type-moh-24\"> </a></td><td>העתק תעודת מומחה-מדריך</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"practitioner-certificate-type-moh-25\"> </a></td><td>רשיון בהיפנוזה</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"practitioner-certificate-type-moh-26\"> </a></td><td>תעודת רישום</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"practitioner-certificate-type-moh-27\"> </a></td><td>העתק רשיון זמני</td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"practitioner-certificate-type-moh-28\"> </a></td><td>תעודת יושר</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"practitioner-certificate-type-moh-29\"> </a></td><td>ויזה</td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"practitioner-certificate-type-moh-30\"> </a></td><td>ויזה - התמחות ראשונית</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"practitioner-certificate-type-moh-31\"> </a></td><td>היתר מיוחד להעסקה</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"practitioner-certificate-type-moh-32\"> </a></td><td>העתק תעודת מקצוע - זמנית</td></tr><tr><td style=\"white-space:nowrap\">33<a name=\"practitioner-certificate-type-moh-33\"> </a></td><td>העתק היתר לניהול מעבדה בתוך מערך המעבדות</td></tr><tr><td style=\"white-space:nowrap\">34<a name=\"practitioner-certificate-type-moh-34\"> </a></td><td>אישור העסקה</td></tr><tr><td style=\"white-space:nowrap\">35<a name=\"practitioner-certificate-type-moh-35\"> </a></td><td>היתר לניהול מעבדה בתוך מערך המעבדות</td></tr><tr><td style=\"white-space:nowrap\">60<a name=\"practitioner-certificate-type-moh-60\"> </a></td><td>היתר לניהול מעבדה בתוך מערך המעבדות</td></tr><tr><td style=\"white-space:nowrap\">101<a name=\"practitioner-certificate-type-moh-101\"> </a></td><td>היתר מוגבל למוסדות</td></tr><tr><td style=\"white-space:nowrap\">102<a name=\"practitioner-certificate-type-moh-102\"> </a></td><td>היתר זמני</td></tr><tr><td style=\"white-space:nowrap\">103<a name=\"practitioner-certificate-type-moh-103\"> </a></td><td>תעודת רישום מוגבלת למתן דם</td></tr><tr><td style=\"white-space:nowrap\">104<a name=\"practitioner-certificate-type-moh-104\"> </a></td><td>אישור הכנה ללידה</td></tr><tr><td style=\"white-space:nowrap\">105<a name=\"practitioner-certificate-type-moh-105\"> </a></td><td>העתק אישור הכנה ללידה</td></tr><tr><td style=\"white-space:nowrap\">106<a name=\"practitioner-certificate-type-moh-106\"> </a></td><td>אישור סיום מודולה מקצועית בסיעוד</td></tr><tr><td style=\"white-space:nowrap\">108<a name=\"practitioner-certificate-type-moh-108\"> </a></td><td>אישור לימודים </td></tr><tr><td style=\"white-space:nowrap\">109<a name=\"practitioner-certificate-type-moh-109\"> </a></td><td>היתר זמני מוגבל למזרח ירושלים</td></tr><tr><td style=\"white-space:nowrap\">110<a name=\"practitioner-certificate-type-moh-110\"> </a></td><td>תעודת רישום קורס ע ב</td></tr><tr><td style=\"white-space:nowrap\">111<a name=\"practitioner-certificate-type-moh-111\"> </a></td><td>העתק תעודת רישום לקורס ע.ב</td></tr><tr><td style=\"white-space:nowrap\">112<a name=\"practitioner-certificate-type-moh-112\"> </a></td><td>אישור לחוץ לארץ</td></tr><tr><td style=\"white-space:nowrap\">113<a name=\"practitioner-certificate-type-moh-113\"> </a></td><td>העתק תעודת רישום</td></tr><tr><td style=\"white-space:nowrap\">114<a name=\"practitioner-certificate-type-moh-114\"> </a></td><td>היתר מוגבל בפיקוח</td></tr><tr><td style=\"white-space:nowrap\">115<a name=\"practitioner-certificate-type-moh-115\"> </a></td><td>אישור הדרכה קלינית</td></tr><tr><td style=\"white-space:nowrap\">116<a name=\"practitioner-certificate-type-moh-116\"> </a></td><td>העתק היתר זמני</td></tr><tr><td style=\"white-space:nowrap\">117<a name=\"practitioner-certificate-type-moh-117\"> </a></td><td>העתק תעודת מדריך</td></tr><tr><td style=\"white-space:nowrap\">118<a name=\"practitioner-certificate-type-moh-118\"> </a></td><td>העתק רשיון בהפנוזה</td></tr><tr><td style=\"white-space:nowrap\">119<a name=\"practitioner-certificate-type-moh-119\"> </a></td><td>ת. רישום ע.ב מודולה מתקדמת</td></tr><tr><td style=\"white-space:nowrap\">120<a name=\"practitioner-certificate-type-moh-120\"> </a></td><td>תעודת מקצוע</td></tr><tr><td style=\"white-space:nowrap\">121<a name=\"practitioner-certificate-type-moh-121\"> </a></td><td>תעודת מקצוע - זמנית</td></tr><tr><td style=\"white-space:nowrap\">122<a name=\"practitioner-certificate-type-moh-122\"> </a></td><td>אחות מומחית בטיפול תומך</td></tr><tr><td style=\"white-space:nowrap\">123<a name=\"practitioner-certificate-type-moh-123\"> </a></td><td>היתר זמני לקורס על בסיסי</td></tr><tr><td style=\"white-space:nowrap\">124<a name=\"practitioner-certificate-type-moh-124\"> </a></td><td>היתר זמני לקורס על בסיסי</td></tr><tr><td style=\"white-space:nowrap\">125<a name=\"practitioner-certificate-type-moh-125\"> </a></td><td>העתק תעודת מקצוע</td></tr><tr><td style=\"white-space:nowrap\">126<a name=\"practitioner-certificate-type-moh-126\"> </a></td><td>טופס השלמה לתעודת יושר</td></tr><tr><td style=\"white-space:nowrap\">127<a name=\"practitioner-certificate-type-moh-127\"> </a></td><td>הרשאה לסטז' לבוגרי הארץ</td></tr><tr><td style=\"white-space:nowrap\">128<a name=\"practitioner-certificate-type-moh-128\"> </a></td><td>היתר מוגבל</td></tr><tr><td style=\"white-space:nowrap\">129<a name=\"practitioner-certificate-type-moh-129\"> </a></td><td>אישור מחנך</td></tr><tr><td style=\"white-space:nowrap\">130<a name=\"practitioner-certificate-type-moh-130\"> </a></td><td>אישור לקנביס</td></tr><tr><td style=\"white-space:nowrap\">131<a name=\"practitioner-certificate-type-moh-131\"> </a></td><td>תעודת הסמכה</td></tr><tr><td style=\"white-space:nowrap\">132<a name=\"practitioner-certificate-type-moh-132\"> </a></td><td>אישור לטיפול בהרדמה</td></tr><tr><td style=\"white-space:nowrap\">133<a name=\"practitioner-certificate-type-moh-133\"> </a></td><td>רשיון זמני לעבודה בפיקוח</td></tr><tr><td style=\"white-space:nowrap\">134<a name=\"practitioner-certificate-type-moh-134\"> </a></td><td>היתר מוגבל- היפנוזה</td></tr><tr><td style=\"white-space:nowrap\">135<a name=\"practitioner-certificate-type-moh-135\"> </a></td><td>אישור תיירות מרפא</td></tr><tr><td style=\"white-space:nowrap\">136<a name=\"practitioner-certificate-type-moh-136\"> </a></td><td>אישור הדרכה קלינית למומחיות</td></tr><tr><td style=\"white-space:nowrap\">137<a name=\"practitioner-certificate-type-moh-137\"> </a></td><td>תעודת ספורט</td></tr><tr><td style=\"white-space:nowrap\">138<a name=\"practitioner-certificate-type-moh-138\"> </a></td><td>היתר מוגבל להתנסות</td></tr><tr><td style=\"white-space:nowrap\">139<a name=\"practitioner-certificate-type-moh-139\"> </a></td><td>אישור סדציה לילדים</td></tr><tr><td style=\"white-space:nowrap\">140<a name=\"practitioner-certificate-type-moh-140\"> </a></td><td>אישור סדציה למבוגרים</td></tr><tr><td style=\"white-space:nowrap\">141<a name=\"practitioner-certificate-type-moh-141\"> </a></td><td>היתר זמני לפסיכולוגיה</td></tr><tr><td style=\"white-space:nowrap\">142<a name=\"practitioner-certificate-type-moh-142\"> </a></td><td>היתר זמני - קורונה</td></tr><tr><td style=\"white-space:nowrap\">143<a name=\"practitioner-certificate-type-moh-143\"> </a></td><td>תעודת הסמכה - אקמו</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"];
+  fhir:CodeSystem.version [ fhir:value "4.1.0"];
+  fhir:CodeSystem.name [ fhir:value "PractitionerCertificateTypeMoH"];
+  fhir:CodeSystem.title [ fhir:value "MoH Certificate Types"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2022-04-25T22:05:39+03:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kippi Bordowitz" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "amos@outburn.co.il" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "A list of codes for certificate types according to Israeli MoH"];
+  fhir:CodeSystem.valueSet [
+     fhir:value "http://fhir.health.gov.il/ValueSet/practitioner-certificate-type-moh";
+     fhir:link <http://fhir.health.gov.il/ValueSet/practitioner-certificate-type-moh>
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "78"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רשיון זמני" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רשיון קבוע" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "תעודת הכרה זמנית" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "תעודת הכרה" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "תעודת מומחה" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר מוגבל למומחה" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "סטז'" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור הכרה" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר לניהול מעבדה רפואית" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר מוגבל למשתלם" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הרשאה מוגבלת למומחה" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פטור לתלמיד רפואה" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "13" ];
+     fhir:CodeSystem.concept.display [ fhir:value "תעודת מדריך" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "14" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פטור לפי סעיף 59(14 שנה)" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "15" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור לרכישת סטג' ל-6 חודשים" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "16" ];
+     fhir:CodeSystem.concept.display [ fhir:value "התקן תוך רחמי" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "17" ];
+     fhir:CodeSystem.concept.display [ fhir:value "העתק רשיון קבוע" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "18" ];
+     fhir:CodeSystem.concept.display [ fhir:value "העתק תעודת הכרה" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "19" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר לתושבים זרים" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "20" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הרשאה לסטז  לבוגרי חו\"ל" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "21" ];
+     fhir:CodeSystem.concept.display [ fhir:value "העתק רשיון למומחה" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "22" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר מוגבל למומחה באופטלמולוגיה" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "23" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר מוגבל למומחה בניתוחי לב ילדים" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "24" ];
+     fhir:CodeSystem.concept.display [ fhir:value "העתק תעודת מומחה-מדריך" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "25" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רשיון בהיפנוזה" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "26" ];
+     fhir:CodeSystem.concept.display [ fhir:value "תעודת רישום" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "27" ];
+     fhir:CodeSystem.concept.display [ fhir:value "העתק רשיון זמני" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "28" ];
+     fhir:CodeSystem.concept.display [ fhir:value "תעודת יושר" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "29" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ויזה" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "30" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ויזה - התמחות ראשונית" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "31" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר מיוחד להעסקה" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "32" ];
+     fhir:CodeSystem.concept.display [ fhir:value "העתק תעודת מקצוע - זמנית" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "33" ];
+     fhir:CodeSystem.concept.display [ fhir:value "העתק היתר לניהול מעבדה בתוך מערך המעבדות" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "34" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור העסקה" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "35" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר לניהול מעבדה בתוך מערך המעבדות" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "60" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר לניהול מעבדה בתוך מערך המעבדות" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "101" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר מוגבל למוסדות" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "102" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר זמני" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "103" ];
+     fhir:CodeSystem.concept.display [ fhir:value "תעודת רישום מוגבלת למתן דם" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "104" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור הכנה ללידה" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "105" ];
+     fhir:CodeSystem.concept.display [ fhir:value "העתק אישור הכנה ללידה" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "106" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור סיום מודולה מקצועית בסיעוד" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "108" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור לימודים " ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "109" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר זמני מוגבל למזרח ירושלים" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "110" ];
+     fhir:CodeSystem.concept.display [ fhir:value "תעודת רישום קורס ע ב" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "העתק תעודת רישום לקורס ע.ב" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור לחוץ לארץ" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "העתק תעודת רישום" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "114" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר מוגבל בפיקוח" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "115" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור הדרכה קלינית" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "116" ];
+     fhir:CodeSystem.concept.display [ fhir:value "העתק היתר זמני" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "117" ];
+     fhir:CodeSystem.concept.display [ fhir:value "העתק תעודת מדריך" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "118" ];
+     fhir:CodeSystem.concept.display [ fhir:value "העתק רשיון בהפנוזה" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "119" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ת. רישום ע.ב מודולה מתקדמת" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "120" ];
+     fhir:CodeSystem.concept.display [ fhir:value "תעודת מקצוע" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "121" ];
+     fhir:CodeSystem.concept.display [ fhir:value "תעודת מקצוע - זמנית" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "122" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אחות מומחית בטיפול תומך" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "123" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר זמני לקורס על בסיסי" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "124" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר זמני לקורס על בסיסי" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "125" ];
+     fhir:CodeSystem.concept.display [ fhir:value "העתק תעודת מקצוע" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "126" ];
+     fhir:CodeSystem.concept.display [ fhir:value "טופס השלמה לתעודת יושר" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "127" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הרשאה לסטז' לבוגרי הארץ" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "128" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר מוגבל" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "129" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור מחנך" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "130" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור לקנביס" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "131" ];
+     fhir:CodeSystem.concept.display [ fhir:value "תעודת הסמכה" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "132" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור לטיפול בהרדמה" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "133" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רשיון זמני לעבודה בפיקוח" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "134" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר מוגבל- היפנוזה" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "135" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור תיירות מרפא" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "136" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור הדרכה קלינית למומחיות" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "137" ];
+     fhir:CodeSystem.concept.display [ fhir:value "תעודת ספורט" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "138" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר מוגבל להתנסות" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "139" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור סדציה לילדים" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "140" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אישור סדציה למבוגרים" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "141" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר זמני לפסיכולוגיה" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "142" ];
+     fhir:CodeSystem.concept.display [ fhir:value "היתר זמני - קורונה" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "143" ];
+     fhir:CodeSystem.concept.display [ fhir:value "תעודת הסמכה - אקמו" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/practitioner-certificate-type-moh.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

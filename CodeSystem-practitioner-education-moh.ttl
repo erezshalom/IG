@@ -1,0 +1,1118 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/practitioner-education-moh> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "practitioner-education-moh"];
+  fhir:Resource.language [ fhir:value "he-IL"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"he-IL\" lang=\"he-IL\"><p><b>Properties</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URL</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>education-type</td><td>http://fhir.health.gov.il/cs/practitioner-education-type-moh</td><td>code</td><td/></tr></table><p>This code system http://fhir.health.gov.il/cs/practitioner-education-moh defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"practitioner-education-moh-1\"> </a></td><td>לימודי תעודה - מוסמך</td><td>לימודי תעודה - מוסמך</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"practitioner-education-moh-2\"> </a></td><td>מעשיות</td><td>מעשיות</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"practitioner-education-moh-3\"> </a></td><td>מעשי תיכוני</td><td>מעשי תיכוני</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"practitioner-education-moh-4\"> </a></td><td>מטפלות</td><td>מטפלות</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"practitioner-education-moh-5\"> </a></td><td>מיילדות</td><td>מיילדות</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"practitioner-education-moh-6\"> </a></td><td>סיעוד חדר ניתוח א. מוסמכות</td><td>סיעוד חדר ניתוח א. מוסמכות</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"practitioner-education-moh-7\"> </a></td><td>בריאות הציבור</td><td>בריאות הציבור</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"practitioner-education-moh-8\"> </a></td><td>פסיכיאטריה</td><td>פסיכיאטריה</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"practitioner-education-moh-9\"> </a></td><td>סיעוד בבריאות תעסוקתית</td><td>סיעוד בבריאות תעסוקתית</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"practitioner-education-moh-10\"> </a></td><td>סיעוד מתקדם</td><td>סיעוד מתקדם</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"practitioner-education-moh-11\"> </a></td><td>טיפול נמרץ כללי</td><td>טיפול נמרץ כללי</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"practitioner-education-moh-12\"> </a></td><td>בריאות הקהילה</td><td>בריאות הקהילה</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"practitioner-education-moh-13\"> </a></td><td>גריאטרייה</td><td>גריאטרייה</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"practitioner-education-moh-14\"> </a></td><td>טיפול נמרץ ילדים ופגים (פיתי)</td><td>טיפול נמרץ ילדים ופגים (פיתי)</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"practitioner-education-moh-15\"> </a></td><td>טיפול נמרץ לב</td><td>טיפול נמרץ לב</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"practitioner-education-moh-16\"> </a></td><td>טיפול נמרץ משולב (כללי)</td><td>טיפול נמרץ משולב (כללי)</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"practitioner-education-moh-17\"> </a></td><td>סיעוד חדר ניתוח א. מעשיות</td><td>סיעוד חדר ניתוח א. מעשיות</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"practitioner-education-moh-18\"> </a></td><td>אונקולוגיה</td><td>אונקולוגיה</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"practitioner-education-moh-19\"> </a></td><td>נפרולוגיה</td><td>נפרולוגיה</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"practitioner-education-moh-20\"> </a></td><td>מינהל בסיעוד</td><td>מינהל בסיעוד</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"practitioner-education-moh-21\"> </a></td><td>חובשי צה'ל</td><td>חובשי צה'ל</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"practitioner-education-moh-22\"> </a></td><td>הסבת מעשיות לסמכות</td><td>הסבת מעשיות לסמכות</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"practitioner-education-moh-23\"> </a></td><td>הסבת מעשיות עולות</td><td>הסבת מעשיות עולות</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"practitioner-education-moh-24\"> </a></td><td>הסבת פראמדיקים</td><td>הסבת פראמדיקים</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"practitioner-education-moh-25\"> </a></td><td>מוסמך אקדמאי</td><td>מוסמך אקדמאי</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"practitioner-education-moh-26\"> </a></td><td>הסבת אקדמאים</td><td>הסבת אקדמאים</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"practitioner-education-moh-27\"> </a></td><td>הסבה לביוטכנולוגים</td><td>הסבה לביוטכנולוגים</td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"practitioner-education-moh-28\"> </a></td><td>אקדמי- הסבת אקדמיים</td><td>אקדמי- הסבת אקדמיים</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"practitioner-education-moh-29\"> </a></td><td>הוראה והדרכה</td><td>הוראה והדרכה</td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"practitioner-education-moh-30\"> </a></td><td>אוריינטציה למיילדות</td><td>אוריינטציה למיילדות</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"practitioner-education-moh-31\"> </a></td><td>התנסות קלינית</td><td>התנסות קלינית</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"practitioner-education-moh-32\"> </a></td><td>התנסות עיונית</td><td>התנסות עיונית</td></tr><tr><td style=\"white-space:nowrap\">33<a name=\"practitioner-education-moh-33\"> </a></td><td>התנסות קלינית ועיונית</td><td>התנסות קלינית ועיונית</td></tr><tr><td style=\"white-space:nowrap\">42<a name=\"practitioner-education-moh-42\"> </a></td><td>בעלות משפחה מעשיות</td><td>בעלות משפחה מעשיות</td></tr><tr><td style=\"white-space:nowrap\">43<a name=\"practitioner-education-moh-43\"> </a></td><td>אקדמיה 4 שנתי</td><td>אקדמיה 4 שנתי</td></tr><tr><td style=\"white-space:nowrap\">44<a name=\"practitioner-education-moh-44\"> </a></td><td>הסבת אקדמאים לתואר אחות מוסמכת</td><td>הסבת אקדמאים לתואר אחות מוסמכת</td></tr><tr><td style=\"white-space:nowrap\">45<a name=\"practitioner-education-moh-45\"> </a></td><td>הסבת אקדמאים לתואר ראשון בסעוד</td><td>הסבת אקדמאים לתואר ראשון בסעוד</td></tr><tr><td style=\"white-space:nowrap\">46<a name=\"practitioner-education-moh-46\"> </a></td><td>לימודי תעודה</td><td>לימודי תעודה</td></tr><tr><td style=\"white-space:nowrap\">47<a name=\"practitioner-education-moh-47\"> </a></td><td>אקדמיה חיילות</td><td>אקדמיה חיילות</td></tr><tr><td style=\"white-space:nowrap\">48<a name=\"practitioner-education-moh-48\"> </a></td><td>ייעוץ פעילות גופנית</td><td>ייעוץ פעילות גופנית</td></tr><tr><td style=\"white-space:nowrap\">49<a name=\"practitioner-education-moh-49\"> </a></td><td>ייעוץ שינה</td><td>ייעוץ שינה</td></tr><tr><td style=\"white-space:nowrap\">55<a name=\"practitioner-education-moh-55\"> </a></td><td>מעשיות חדשות 2015</td><td>מעשיות חדשות 2015</td></tr><tr><td style=\"white-space:nowrap\">56<a name=\"practitioner-education-moh-56\"> </a></td><td>סיעוד התלמיד כהכנה לברצ&quot;ב</td><td>סיעוד התלמיד כהכנה לברצ&quot;ב</td></tr><tr><td style=\"white-space:nowrap\">57<a name=\"practitioner-education-moh-57\"> </a></td><td>מעשיות חדשות 2017</td><td>מעשיות חדשות 2017</td></tr><tr><td style=\"white-space:nowrap\">61<a name=\"practitioner-education-moh-61\"> </a></td><td>קביעת מעמד - מוסמכות</td><td>קביעת מעמד - מוסמכות</td></tr><tr><td style=\"white-space:nowrap\">62<a name=\"practitioner-education-moh-62\"> </a></td><td>קביעת מעמד - מעשיות</td><td>קביעת מעמד - מעשיות</td></tr><tr><td style=\"white-space:nowrap\">65<a name=\"practitioner-education-moh-65\"> </a></td><td>הדרכה קלינית</td><td>הדרכה קלינית</td></tr><tr><td style=\"white-space:nowrap\">66<a name=\"practitioner-education-moh-66\"> </a></td><td>הסבת רופאים</td><td>הסבת רופאים</td></tr><tr><td style=\"white-space:nowrap\">67<a name=\"practitioner-education-moh-67\"> </a></td><td>רפואה דחופה</td><td>רפואה דחופה</td></tr><tr><td style=\"white-space:nowrap\">68<a name=\"practitioner-education-moh-68\"> </a></td><td>שיקום</td><td>שיקום</td></tr><tr><td style=\"white-space:nowrap\">70<a name=\"practitioner-education-moh-70\"> </a></td><td>מניעת זיהומים</td><td>מניעת זיהומים</td></tr><tr><td style=\"white-space:nowrap\">71<a name=\"practitioner-education-moh-71\"> </a></td><td>טיפול נמרץ פגים</td><td>טיפול נמרץ פגים</td></tr><tr><td style=\"white-space:nowrap\">72<a name=\"practitioner-education-moh-72\"> </a></td><td>טיפול נמרץ ילדים</td><td>טיפול נמרץ ילדים</td></tr><tr><td style=\"white-space:nowrap\">73<a name=\"practitioner-education-moh-73\"> </a></td><td>רפואה ראשונית</td><td>רפואה ראשונית</td></tr><tr><td style=\"white-space:nowrap\">75<a name=\"practitioner-education-moh-75\"> </a></td><td>רפואה מונעת</td><td>רפואה מונעת</td></tr><tr><td style=\"white-space:nowrap\">76<a name=\"practitioner-education-moh-76\"> </a></td><td>סוכרת</td><td>סוכרת</td></tr><tr><td style=\"white-space:nowrap\">77<a name=\"practitioner-education-moh-77\"> </a></td><td>ניהול הטיפול באי ספיקת לב</td><td>ניהול הטיפול באי ספיקת לב</td></tr><tr><td style=\"white-space:nowrap\">78<a name=\"practitioner-education-moh-78\"> </a></td><td>על בסיסי</td><td>על בסיסי</td></tr><tr><td style=\"white-space:nowrap\">79<a name=\"practitioner-education-moh-79\"> </a></td><td>הסבת עולים</td><td>הסבת עולים</td></tr><tr><td style=\"white-space:nowrap\">81<a name=\"practitioner-education-moh-81\"> </a></td><td>אקוטי</td><td>אקוטי</td></tr><tr><td style=\"white-space:nowrap\">82<a name=\"practitioner-education-moh-82\"> </a></td><td>חטיבה במניעה</td><td>חטיבה במניעה</td></tr><tr><td style=\"white-space:nowrap\">83<a name=\"practitioner-education-moh-83\"> </a></td><td>חטיבה כרונית</td><td>חטיבה כרונית</td></tr><tr><td style=\"white-space:nowrap\">84<a name=\"practitioner-education-moh-84\"> </a></td><td>מזכירות</td><td>מזכירות</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"practitioner-education-moh-99\"> </a></td><td>ישן</td><td>ישן</td></tr><tr><td style=\"white-space:nowrap\">100<a name=\"practitioner-education-moh-100\"> </a></td><td>חדר ניתוח</td><td>חדר ניתוח</td></tr><tr><td style=\"white-space:nowrap\">103<a name=\"practitioner-education-moh-103\"> </a></td><td>חטיבה אקוטית</td><td>חטיבה אקוטית</td></tr><tr><td style=\"white-space:nowrap\">104<a name=\"practitioner-education-moh-104\"> </a></td><td>חטיבה אקוטית וכרונית</td><td>חטיבה אקוטית וכרונית</td></tr><tr><td style=\"white-space:nowrap\">105<a name=\"practitioner-education-moh-105\"> </a></td><td>הסבת פראמדיקים</td><td>הסבת פראמדיקים</td></tr><tr><td style=\"white-space:nowrap\">106<a name=\"practitioner-education-moh-106\"> </a></td><td>גריאטריה</td><td>גריאטריה</td></tr><tr><td style=\"white-space:nowrap\">107<a name=\"practitioner-education-moh-107\"> </a></td><td>יועצת הנקה</td><td>יועצת הנקה</td></tr><tr><td style=\"white-space:nowrap\">108<a name=\"practitioner-education-moh-108\"> </a></td><td>מדיניות ומינהל בסיעוד</td><td>מדיניות ומינהל בסיעוד</td></tr><tr><td style=\"white-space:nowrap\">109<a name=\"practitioner-education-moh-109\"> </a></td><td>רישום מרשמי המשך על ידי אחות</td><td>רישום מרשמי המשך על ידי אחות</td></tr><tr><td style=\"white-space:nowrap\">110<a name=\"practitioner-education-moh-110\"> </a></td><td>פסיכותרפיה</td><td>פסיכותרפיה</td></tr><tr><td style=\"white-space:nowrap\">111<a name=\"practitioner-education-moh-111\"> </a></td><td>פסיכותרפיה בשיטת CBT</td><td>פסיכותרפיה בשיטת CBT</td></tr><tr><td style=\"white-space:nowrap\">112<a name=\"practitioner-education-moh-112\"> </a></td><td>מבחן ממיין</td><td>מבחן ממיין</td></tr><tr><td style=\"white-space:nowrap\">113<a name=\"practitioner-education-moh-113\"> </a></td><td>ייעוץ לפעילות גופנית</td><td>ייעוץ לפעילות גופנית</td></tr><tr><td style=\"white-space:nowrap\">114<a name=\"practitioner-education-moh-114\"> </a></td><td>ייעוץ שינה</td><td>ייעוץ שינה</td></tr><tr><td style=\"white-space:nowrap\">115<a name=\"practitioner-education-moh-115\"> </a></td><td>טיפול בפצעים וסטומה</td><td>טיפול בפצעים וסטומה</td></tr><tr><td style=\"white-space:nowrap\">116<a name=\"practitioner-education-moh-116\"> </a></td><td>גסטרואנטרולוגיה</td><td>גסטרואנטרולוגיה</td></tr><tr><td style=\"white-space:nowrap\">117<a name=\"practitioner-education-moh-117\"> </a></td><td>שבץ מוחי</td><td>שבץ מוחי</td></tr><tr><td style=\"white-space:nowrap\">118<a name=\"practitioner-education-moh-118\"> </a></td><td>אי ספיקת לב</td><td>אי ספיקת לב</td></tr><tr><td style=\"white-space:nowrap\">119<a name=\"practitioner-education-moh-119\"> </a></td><td>פוריות</td><td>פוריות</td></tr><tr><td style=\"white-space:nowrap\">120<a name=\"practitioner-education-moh-120\"> </a></td><td>רפואה ראשונית ורישום מרשמי המשך</td><td>רפואה ראשונית ורישום מרשמי המשך</td></tr><tr><td style=\"white-space:nowrap\">1000<a name=\"practitioner-education-moh-1000\"> </a></td><td>לא ידוע</td><td>לא ידוע</td></tr><tr><td style=\"white-space:nowrap\">1001<a name=\"practitioner-education-moh-1001\"> </a></td><td>מומחיות סוכרת</td><td>מומחיות סוכרת</td></tr><tr><td style=\"white-space:nowrap\">1002<a name=\"practitioner-education-moh-1002\"> </a></td><td>מומחיות גריאטריה</td><td>מומחיות גריאטריה</td></tr><tr><td style=\"white-space:nowrap\">1003<a name=\"practitioner-education-moh-1003\"> </a></td><td>מומחיות טיפול תומך</td><td>מומחיות טיפול תומך</td></tr><tr><td style=\"white-space:nowrap\">1004<a name=\"practitioner-education-moh-1004\"> </a></td><td>טיפול בפצעים וסטומה</td><td>טיפול בפצעים וסטומה</td></tr><tr><td style=\"white-space:nowrap\">1005<a name=\"practitioner-education-moh-1005\"> </a></td><td>רפואה ראשונית צבאית-רפואה ראשונית</td><td>רפואה ראשונית צבאית-רפואה ראשונית</td></tr><tr><td style=\"white-space:nowrap\">1006<a name=\"practitioner-education-moh-1006\"> </a></td><td>מודולת השלמה בייעוץ הנקה</td><td>מודולת השלמה בייעוץ הנקה</td></tr><tr><td style=\"white-space:nowrap\">1007<a name=\"practitioner-education-moh-1007\"> </a></td><td>מודולת השלמה בשבץ מוחי</td><td>מודולת השלמה בשבץ מוחי</td></tr><tr><td style=\"white-space:nowrap\">1008<a name=\"practitioner-education-moh-1008\"> </a></td><td>חטיבה משותפת אקוטית מבוגרים</td><td>חטיבה משותפת אקוטית מבוגרים</td></tr><tr><td style=\"white-space:nowrap\">1009<a name=\"practitioner-education-moh-1009\"> </a></td><td>חטיבה משותפת אקוטית ילדים</td><td>חטיבה משותפת אקוטית ילדים</td></tr><tr><td style=\"white-space:nowrap\">1010<a name=\"practitioner-education-moh-1010\"> </a></td><td>חטיבה משותפת אקוטית כרונית</td><td>חטיבה משותפת אקוטית כרונית</td></tr><tr><td style=\"white-space:nowrap\">1011<a name=\"practitioner-education-moh-1011\"> </a></td><td>חטיבה משותפת כרונית</td><td>חטיבה משותפת כרונית</td></tr><tr><td style=\"white-space:nowrap\">1012<a name=\"practitioner-education-moh-1012\"> </a></td><td>מניעה וקידום בריאות וייעוץ הנקה</td><td>מניעה וקידום בריאות וייעוץ הנקה</td></tr><tr><td style=\"white-space:nowrap\">1013<a name=\"practitioner-education-moh-1013\"> </a></td><td>רפואה ראשונית - מאוחדת </td><td>רפואה ראשונית - מאוחדת </td></tr><tr><td style=\"white-space:nowrap\">1014<a name=\"practitioner-education-moh-1014\"> </a></td><td>רפואה ראשונית צבאית - רפואה ראשונית ורישום מרשמי המשך</td><td>רפואה ראשונית צבאית - רפואה ראשונית ורישום מרשמי המשך</td></tr><tr><td style=\"white-space:nowrap\">44197<a name=\"practitioner-education-moh-44197\"> </a></td><td>B.A.</td><td>B.A.</td></tr><tr><td style=\"white-space:nowrap\">44228<a name=\"practitioner-education-moh-44228\"> </a></td><td>M.A.</td><td>M.A.</td></tr><tr><td style=\"white-space:nowrap\">44256<a name=\"practitioner-education-moh-44256\"> </a></td><td>(Ph.D)</td><td>(Ph.D)</td></tr><tr><td style=\"white-space:nowrap\">44287<a name=\"practitioner-education-moh-44287\"> </a></td><td>(MD)</td><td>(MD)</td></tr><tr><td style=\"white-space:nowrap\">44317<a name=\"practitioner-education-moh-44317\"> </a></td><td>Psy.D</td><td>Psy.D</td></tr><tr><td style=\"white-space:nowrap\">44348<a name=\"practitioner-education-moh-44348\"> </a></td><td>(DMD)</td><td>(DMD)</td></tr><tr><td style=\"white-space:nowrap\">44378<a name=\"practitioner-education-moh-44378\"> </a></td><td>(D.Sc)</td><td>(D.Sc)</td></tr><tr><td style=\"white-space:nowrap\">44409<a name=\"practitioner-education-moh-44409\"> </a></td><td>שנת השלמה</td><td>שנת השלמה</td></tr><tr><td style=\"white-space:nowrap\">44440<a name=\"practitioner-education-moh-44440\"> </a></td><td>תעודה</td><td>תעודה</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://fhir.health.gov.il/cs/practitioner-education-moh"];
+  fhir:CodeSystem.version [ fhir:value "4.1.0"];
+  fhir:CodeSystem.name [ fhir:value "PractitionerEducationMoh"];
+  fhir:CodeSystem.title [ fhir:value "Ministry of Health practitioner-education codes"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2022-04-25T22:05:39+03:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kippi Bordowitz" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "amos@outburn.co.il" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Codes for practitioner-education according to Israeli MoH"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "107"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.property [
+     fhir:index 0;
+     fhir:CodeSystem.property.code [ fhir:value "education-type" ];
+     fhir:CodeSystem.property.uri [ fhir:value "http://fhir.health.gov.il/cs/practitioner-education-type-moh" ];
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "לימודי תעודה - מוסמך" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "לימודי תעודה - מוסמך" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מעשיות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מעשיות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מעשי תיכוני" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מעשי תיכוני" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מטפלות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מטפלות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מיילדות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מיילדות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "סיעוד חדר ניתוח א. מוסמכות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "סיעוד חדר ניתוח א. מוסמכות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "בריאות הציבור" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "בריאות הציבור" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פסיכיאטריה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "פסיכיאטריה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "סיעוד בבריאות תעסוקתית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "סיעוד בבריאות תעסוקתית" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "סיעוד מתקדם" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "סיעוד מתקדם" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ];
+     fhir:CodeSystem.concept.display [ fhir:value "טיפול נמרץ כללי" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "טיפול נמרץ כללי" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ];
+     fhir:CodeSystem.concept.display [ fhir:value "בריאות הקהילה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "בריאות הקהילה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "13" ];
+     fhir:CodeSystem.concept.display [ fhir:value "גריאטרייה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "גריאטרייה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "14" ];
+     fhir:CodeSystem.concept.display [ fhir:value "טיפול נמרץ ילדים ופגים (פיתי)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "טיפול נמרץ ילדים ופגים (פיתי)" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "15" ];
+     fhir:CodeSystem.concept.display [ fhir:value "טיפול נמרץ לב" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "טיפול נמרץ לב" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "16" ];
+     fhir:CodeSystem.concept.display [ fhir:value "טיפול נמרץ משולב (כללי)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "טיפול נמרץ משולב (כללי)" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "17" ];
+     fhir:CodeSystem.concept.display [ fhir:value "סיעוד חדר ניתוח א. מעשיות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "סיעוד חדר ניתוח א. מעשיות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "18" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אונקולוגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "אונקולוגיה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "19" ];
+     fhir:CodeSystem.concept.display [ fhir:value "נפרולוגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "נפרולוגיה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "20" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מינהל בסיעוד" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מינהל בסיעוד" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "21" ];
+     fhir:CodeSystem.concept.display [ fhir:value "חובשי צה'ל" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "חובשי צה'ל" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "22" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הסבת מעשיות לסמכות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "הסבת מעשיות לסמכות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "23" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הסבת מעשיות עולות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "הסבת מעשיות עולות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "24" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הסבת פראמדיקים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "הסבת פראמדיקים" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "25" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מוסמך אקדמאי" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מוסמך אקדמאי" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "26" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הסבת אקדמאים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "הסבת אקדמאים" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "27" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הסבה לביוטכנולוגים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "הסבה לביוטכנולוגים" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "28" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אקדמי- הסבת אקדמיים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "אקדמי- הסבת אקדמיים" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "29" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הוראה והדרכה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "הוראה והדרכה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "30" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אוריינטציה למיילדות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "אוריינטציה למיילדות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "31" ];
+     fhir:CodeSystem.concept.display [ fhir:value "התנסות קלינית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "התנסות קלינית" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "32" ];
+     fhir:CodeSystem.concept.display [ fhir:value "התנסות עיונית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "התנסות עיונית" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "33" ];
+     fhir:CodeSystem.concept.display [ fhir:value "התנסות קלינית ועיונית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "התנסות קלינית ועיונית" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "42" ];
+     fhir:CodeSystem.concept.display [ fhir:value "בעלות משפחה מעשיות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "בעלות משפחה מעשיות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "43" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אקדמיה 4 שנתי" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "אקדמיה 4 שנתי" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "44" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הסבת אקדמאים לתואר אחות מוסמכת" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "הסבת אקדמאים לתואר אחות מוסמכת" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "45" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הסבת אקדמאים לתואר ראשון בסעוד" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "הסבת אקדמאים לתואר ראשון בסעוד" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "46" ];
+     fhir:CodeSystem.concept.display [ fhir:value "לימודי תעודה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "לימודי תעודה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "47" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אקדמיה חיילות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "אקדמיה חיילות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "48" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ייעוץ פעילות גופנית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "ייעוץ פעילות גופנית" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "49" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ייעוץ שינה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "ייעוץ שינה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "55" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מעשיות חדשות 2015" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מעשיות חדשות 2015" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "56" ];
+     fhir:CodeSystem.concept.display [ fhir:value "סיעוד התלמיד כהכנה לברצ\"ב" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "סיעוד התלמיד כהכנה לברצ\"ב" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "57" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מעשיות חדשות 2017" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מעשיות חדשות 2017" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "61" ];
+     fhir:CodeSystem.concept.display [ fhir:value "קביעת מעמד - מוסמכות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "קביעת מעמד - מוסמכות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "62" ];
+     fhir:CodeSystem.concept.display [ fhir:value "קביעת מעמד - מעשיות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "קביעת מעמד - מעשיות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "65" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הדרכה קלינית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "הדרכה קלינית" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "66" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הסבת רופאים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "הסבת רופאים" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "4" ]
+     ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "67" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה דחופה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "רפואה דחופה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "68" ];
+     fhir:CodeSystem.concept.display [ fhir:value "שיקום" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "שיקום" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "70" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מניעת זיהומים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מניעת זיהומים" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "71" ];
+     fhir:CodeSystem.concept.display [ fhir:value "טיפול נמרץ פגים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "טיפול נמרץ פגים" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "72" ];
+     fhir:CodeSystem.concept.display [ fhir:value "טיפול נמרץ ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "טיפול נמרץ ילדים" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "73" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה ראשונית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "רפואה ראשונית" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "75" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה מונעת" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "רפואה מונעת" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "76" ];
+     fhir:CodeSystem.concept.display [ fhir:value "סוכרת" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "סוכרת" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "77" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ניהול הטיפול באי ספיקת לב" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "ניהול הטיפול באי ספיקת לב" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "78" ];
+     fhir:CodeSystem.concept.display [ fhir:value "על בסיסי" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "על בסיסי" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "79" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הסבת עולים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "הסבת עולים" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "81" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אקוטי" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "אקוטי" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "82" ];
+     fhir:CodeSystem.concept.display [ fhir:value "חטיבה במניעה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "חטיבה במניעה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "83" ];
+     fhir:CodeSystem.concept.display [ fhir:value "חטיבה כרונית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "חטיבה כרונית" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "84" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מזכירות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מזכירות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "99" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ישן" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "ישן" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "100" ];
+     fhir:CodeSystem.concept.display [ fhir:value "חדר ניתוח" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "חדר ניתוח" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "103" ];
+     fhir:CodeSystem.concept.display [ fhir:value "חטיבה אקוטית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "חטיבה אקוטית" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "104" ];
+     fhir:CodeSystem.concept.display [ fhir:value "חטיבה אקוטית וכרונית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "חטיבה אקוטית וכרונית" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "105" ];
+     fhir:CodeSystem.concept.display [ fhir:value "הסבת פראמדיקים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "הסבת פראמדיקים" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "106" ];
+     fhir:CodeSystem.concept.display [ fhir:value "גריאטריה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "גריאטריה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "107" ];
+     fhir:CodeSystem.concept.display [ fhir:value "יועצת הנקה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "יועצת הנקה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "108" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מדיניות ומינהל בסיעוד" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מדיניות ומינהל בסיעוד" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "109" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רישום מרשמי המשך על ידי אחות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "רישום מרשמי המשך על ידי אחות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "110" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פסיכותרפיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "פסיכותרפיה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פסיכותרפיה בשיטת CBT" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "פסיכותרפיה בשיטת CBT" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מבחן ממיין" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מבחן ממיין" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ייעוץ לפעילות גופנית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "ייעוץ לפעילות גופנית" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "114" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ייעוץ שינה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "ייעוץ שינה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "115" ];
+     fhir:CodeSystem.concept.display [ fhir:value "טיפול בפצעים וסטומה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "טיפול בפצעים וסטומה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "116" ];
+     fhir:CodeSystem.concept.display [ fhir:value "גסטרואנטרולוגיה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "גסטרואנטרולוגיה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 79;
+     fhir:CodeSystem.concept.code [ fhir:value "117" ];
+     fhir:CodeSystem.concept.display [ fhir:value "שבץ מוחי" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "שבץ מוחי" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 80;
+     fhir:CodeSystem.concept.code [ fhir:value "118" ];
+     fhir:CodeSystem.concept.display [ fhir:value "אי ספיקת לב" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "אי ספיקת לב" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 81;
+     fhir:CodeSystem.concept.code [ fhir:value "119" ];
+     fhir:CodeSystem.concept.display [ fhir:value "פוריות" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "פוריות" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 82;
+     fhir:CodeSystem.concept.code [ fhir:value "120" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה ראשונית ורישום מרשמי המשך" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "רפואה ראשונית ורישום מרשמי המשך" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 83;
+     fhir:CodeSystem.concept.code [ fhir:value "1000" ];
+     fhir:CodeSystem.concept.display [ fhir:value "לא ידוע" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "לא ידוע" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "NULL" ]
+     ]
+  ], [
+     fhir:index 84;
+     fhir:CodeSystem.concept.code [ fhir:value "1001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מומחיות סוכרת" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות סוכרת" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 85;
+     fhir:CodeSystem.concept.code [ fhir:value "1002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מומחיות גריאטריה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות גריאטריה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 86;
+     fhir:CodeSystem.concept.code [ fhir:value "1003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מומחיות טיפול תומך" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מומחיות טיפול תומך" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 87;
+     fhir:CodeSystem.concept.code [ fhir:value "1004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "טיפול בפצעים וסטומה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "טיפול בפצעים וסטומה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 88;
+     fhir:CodeSystem.concept.code [ fhir:value "1005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה ראשונית צבאית-רפואה ראשונית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "רפואה ראשונית צבאית-רפואה ראשונית" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 89;
+     fhir:CodeSystem.concept.code [ fhir:value "1006" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מודולת השלמה בייעוץ הנקה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מודולת השלמה בייעוץ הנקה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 90;
+     fhir:CodeSystem.concept.code [ fhir:value "1007" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מודולת השלמה בשבץ מוחי" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מודולת השלמה בשבץ מוחי" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 91;
+     fhir:CodeSystem.concept.code [ fhir:value "1008" ];
+     fhir:CodeSystem.concept.display [ fhir:value "חטיבה משותפת אקוטית מבוגרים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "חטיבה משותפת אקוטית מבוגרים" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 92;
+     fhir:CodeSystem.concept.code [ fhir:value "1009" ];
+     fhir:CodeSystem.concept.display [ fhir:value "חטיבה משותפת אקוטית ילדים" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "חטיבה משותפת אקוטית ילדים" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 93;
+     fhir:CodeSystem.concept.code [ fhir:value "1010" ];
+     fhir:CodeSystem.concept.display [ fhir:value "חטיבה משותפת אקוטית כרונית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "חטיבה משותפת אקוטית כרונית" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 94;
+     fhir:CodeSystem.concept.code [ fhir:value "1011" ];
+     fhir:CodeSystem.concept.display [ fhir:value "חטיבה משותפת כרונית" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "חטיבה משותפת כרונית" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 95;
+     fhir:CodeSystem.concept.code [ fhir:value "1012" ];
+     fhir:CodeSystem.concept.display [ fhir:value "מניעה וקידום בריאות וייעוץ הנקה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "מניעה וקידום בריאות וייעוץ הנקה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 96;
+     fhir:CodeSystem.concept.code [ fhir:value "1013" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה ראשונית - מאוחדת " ];
+     fhir:CodeSystem.concept.definition [ fhir:value "רפואה ראשונית - מאוחדת " ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 97;
+     fhir:CodeSystem.concept.code [ fhir:value "1014" ];
+     fhir:CodeSystem.concept.display [ fhir:value "רפואה ראשונית צבאית - רפואה ראשונית ורישום מרשמי המשך" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "רפואה ראשונית צבאית - רפואה ראשונית ורישום מרשמי המשך" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 98;
+     fhir:CodeSystem.concept.code [ fhir:value "44197" ];
+     fhir:CodeSystem.concept.display [ fhir:value "B.A." ];
+     fhir:CodeSystem.concept.definition [ fhir:value "B.A." ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "1" ]
+     ]
+  ], [
+     fhir:index 99;
+     fhir:CodeSystem.concept.code [ fhir:value "44228" ];
+     fhir:CodeSystem.concept.display [ fhir:value "M.A." ];
+     fhir:CodeSystem.concept.definition [ fhir:value "M.A." ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 100;
+     fhir:CodeSystem.concept.code [ fhir:value "44256" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(Ph.D)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "(Ph.D)" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "3" ]
+     ]
+  ], [
+     fhir:index 101;
+     fhir:CodeSystem.concept.code [ fhir:value "44287" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(MD)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "(MD)" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "-999" ]
+     ]
+  ], [
+     fhir:index 102;
+     fhir:CodeSystem.concept.code [ fhir:value "44317" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Psy.D" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Psy.D" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "-999" ]
+     ]
+  ], [
+     fhir:index 103;
+     fhir:CodeSystem.concept.code [ fhir:value "44348" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(DMD)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "(DMD)" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "-999" ]
+     ]
+  ], [
+     fhir:index 104;
+     fhir:CodeSystem.concept.code [ fhir:value "44378" ];
+     fhir:CodeSystem.concept.display [ fhir:value "(D.Sc)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "(D.Sc)" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "-999" ]
+     ]
+  ], [
+     fhir:index 105;
+     fhir:CodeSystem.concept.code [ fhir:value "44409" ];
+     fhir:CodeSystem.concept.display [ fhir:value "שנת השלמה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "שנת השלמה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "8" ]
+     ]
+  ], [
+     fhir:index 106;
+     fhir:CodeSystem.concept.code [ fhir:value "44440" ];
+     fhir:CodeSystem.concept.display [ fhir:value "תעודה" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "תעודה" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "education-type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "9" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/practitioner-education-moh.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

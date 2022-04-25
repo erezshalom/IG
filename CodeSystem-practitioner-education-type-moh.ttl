@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/practitioner-education-type-moh> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "practitioner-education-type-moh"];
+  fhir:Resource.language [ fhir:value "he-IL"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"he-IL\" lang=\"he-IL\"><p>This code system http://fhir.health.gov.il/cs/practitioner-education-type-moh defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"practitioner-education-type-moh-1\"> </a></td><td>לימודים אקדמאים</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"practitioner-education-type-moh-2\"> </a></td><td>קורס מוכר</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"practitioner-education-type-moh-3\"> </a></td><td>קורס על בסיסי</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"practitioner-education-type-moh-4\"> </a></td><td>קורס למקצוע</td></tr><tr><td style=\"white-space:nowrap\">-999<a name=\"practitioner-education-type-moh--999\"> </a></td><td>לא ידוע</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://fhir.health.gov.il/cs/practitioner-education-type-moh"];
+  fhir:CodeSystem.version [ fhir:value "4.1.0"];
+  fhir:CodeSystem.name [ fhir:value "PractitionerEducationTypeMoh"];
+  fhir:CodeSystem.title [ fhir:value "Ministry of Health practitioner-education-type codes"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2022-04-25T22:05:39+03:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kippi Bordowitz" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "amos@outburn.co.il" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Codes for practitioner-education-types according to Israeli MoH"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "לימודים אקדמאים" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "קורס מוכר" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "קורס על בסיסי" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "קורס למקצוע" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "-999" ];
+     fhir:CodeSystem.concept.display [ fhir:value "לא ידוע" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/practitioner-education-type-moh.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

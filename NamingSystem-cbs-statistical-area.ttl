@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/NamingSystem/cbs-statistical-area> a fhir:NamingSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cbs-statistical-area"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://fhir.health.gov.il/NamingSystem/cbs-statistical-area</td></tr><tr><td>Version</td><td>4.1.0</td></tr><tr><td>Name</td><td>Israeli CBS statistical area</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>A number representing the city symbol (4-digits) + statistical area (3 digits) in settelment. 7 digits long. Full CBS number conatins two parts: City symbol + statistical number. E.g.: Jerusalem (3000) 113 area produces -&gt; 3000113</p>\n</div></td></tr><tr><td>Publisher</td><td>Israeli Central Bureau of Statistic</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://fhir.health.gov.il/identifier/cbs-statistical-area</td><td>true</td></tr></table></div>"
+  ];
+  fhir:NamingSystem.name [ fhir:value "Israeli CBS statistical area"];
+  fhir:NamingSystem.status [ fhir:value "active"];
+  fhir:NamingSystem.kind [ fhir:value "identifier"];
+  fhir:NamingSystem.date [ fhir:value "2021-11-23"^^xsd:date];
+  fhir:NamingSystem.publisher [ fhir:value "Israeli Central Bureau of Statistic"];
+  fhir:NamingSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kippi Bordowitz" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "amos@outburn.co.il" ]
+     ]
+  ];
+  fhir:NamingSystem.responsible [ fhir:value "Israeli CBS"];
+  fhir:NamingSystem.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+       fhir:Coding.code [ fhir:value "LI" ];
+       fhir:Coding.display [ fhir:value "Labor and industries number" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "National Person Identifier" ]
+  ];
+  fhir:NamingSystem.description [ fhir:value "A number representing the city symbol (4-digits) + statistical area (3 digits) in settelment. 7 digits long. Full CBS number conatins two parts: City symbol + statistical number. E.g.: Jerusalem (3000) 113 area produces -> 3000113"];
+  fhir:NamingSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "IL" ]
+     ]
+  ];
+  fhir:NamingSystem.usage [ fhir:value "Identifies statistical sub-divisions of cities in Israel as defined by CBS"];
+  fhir:NamingSystem.uniqueId [
+     fhir:index 0;
+     fhir:NamingSystem.uniqueId.type [ fhir:value "uri" ];
+     fhir:NamingSystem.uniqueId.value [ fhir:value "http://fhir.health.gov.il/identifier/cbs-statistical-area" ];
+     fhir:NamingSystem.uniqueId.preferred [ fhir:value "true"^^xsd:boolean ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.gov.il/NamingSystem/cbs-statistical-area.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

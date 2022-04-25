@@ -1,0 +1,1017 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/passport-uri> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "passport-uri"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://fhir.health.gov.il/cs/passport-uri defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-AFG<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-AFG\"> </a></td><td>Afghanistan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ALB<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ALB\"> </a></td><td>Albania</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-DZA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-DZA\"> </a></td><td>Algeria</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ASM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ASM\"> </a></td><td>American Samoa</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-AND<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-AND\"> </a></td><td>Andorra</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-AGO<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-AGO\"> </a></td><td>Angola</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-AIA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-AIA\"> </a></td><td>Anguilla</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ATA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ATA\"> </a></td><td>Antarctica</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ATG<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ATG\"> </a></td><td>Antigua and Barbuda</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ARG<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ARG\"> </a></td><td>Argentina</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ARM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ARM\"> </a></td><td>Armenia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ABW<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ABW\"> </a></td><td>Aruba</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-AUS<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-AUS\"> </a></td><td>Australia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-AUT<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-AUT\"> </a></td><td>Austria</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-AZE<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-AZE\"> </a></td><td>Azerbaijan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BHS<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BHS\"> </a></td><td>Bahamas</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BHR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BHR\"> </a></td><td>Bahrain</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BGD<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BGD\"> </a></td><td>Bangladesh</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BRB<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BRB\"> </a></td><td>Barbados</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BLR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BLR\"> </a></td><td>Belarus</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BEL<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BEL\"> </a></td><td>Belgium</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BLZ<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BLZ\"> </a></td><td>Belize</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BEN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BEN\"> </a></td><td>Benin</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BMU<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BMU\"> </a></td><td>Bermuda</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BTN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BTN\"> </a></td><td>Bhutan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BOL<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BOL\"> </a></td><td>Bolivia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BIH<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BIH\"> </a></td><td>Bosnia and Herzegovina</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BWA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BWA\"> </a></td><td>Botswana</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BVT<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BVT\"> </a></td><td>Bouvet Island</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BRA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BRA\"> </a></td><td>Brazil</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-IOT<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-IOT\"> </a></td><td>British Indian Ocean Territory</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BRN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BRN\"> </a></td><td>Brunei</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BGR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BGR\"> </a></td><td>Bulgaria</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BFA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BFA\"> </a></td><td>Burkina Faso</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BDI<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-BDI\"> </a></td><td>Burundi</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KHM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-KHM\"> </a></td><td>Cambodia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CMR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CMR\"> </a></td><td>Cameroon</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CAN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CAN\"> </a></td><td>Canada</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CPV<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CPV\"> </a></td><td>Cape Verde</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CYM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CYM\"> </a></td><td>Cayman Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CAF<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CAF\"> </a></td><td>Central African Republic</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TCD<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-TCD\"> </a></td><td>Chad</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CHL<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CHL\"> </a></td><td>Chile</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CHN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CHN\"> </a></td><td>China</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CXR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CXR\"> </a></td><td>Christmas Island</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CCK<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CCK\"> </a></td><td>Cocos (Keeling) Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-COL<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-COL\"> </a></td><td>Colombia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-COM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-COM\"> </a></td><td>Comoros</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-COG<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-COG\"> </a></td><td>Congo</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-COD<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-COD\"> </a></td><td>Congo, the Democratic Republic of the</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-COK<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-COK\"> </a></td><td>Cook Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CRI<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CRI\"> </a></td><td>Costa Rica</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CIV<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CIV\"> </a></td><td>Ivory Coast</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-HRV<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-HRV\"> </a></td><td>Croatia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CUB<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CUB\"> </a></td><td>Cuba</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CYP<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CYP\"> </a></td><td>Cyprus</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CZE<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CZE\"> </a></td><td>Czech Republic</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-DNK<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-DNK\"> </a></td><td>Denmark</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-DJI<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-DJI\"> </a></td><td>Djibouti</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-DMA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-DMA\"> </a></td><td>Dominica</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-DOM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-DOM\"> </a></td><td>Dominican Republic</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ECU<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ECU\"> </a></td><td>Ecuador</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-EGY<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-EGY\"> </a></td><td>Egypt</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SLV<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SLV\"> </a></td><td>El Salvador</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GNQ<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GNQ\"> </a></td><td>Equatorial Guinea</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ERI<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ERI\"> </a></td><td>Eritrea</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-EST<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-EST\"> </a></td><td>Estonia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ETH<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ETH\"> </a></td><td>Ethiopia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-FLK<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-FLK\"> </a></td><td>Falkland Islands (Malvinas)</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-FRO<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-FRO\"> </a></td><td>Faroe Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-FJI<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-FJI\"> </a></td><td>Fiji</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-FIN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-FIN\"> </a></td><td>Finland</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-FRA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-FRA\"> </a></td><td>France</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GUF<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GUF\"> </a></td><td>French Guiana</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PYF<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-PYF\"> </a></td><td>French Polynesia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ATF<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ATF\"> </a></td><td>French Southern Territories</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GAB<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GAB\"> </a></td><td>Gabon</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GMB<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GMB\"> </a></td><td>Gambia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GEO<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GEO\"> </a></td><td>Georgia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-DEU<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-DEU\"> </a></td><td>Germany</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GHA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GHA\"> </a></td><td>Ghana</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GIB<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GIB\"> </a></td><td>Gibraltar</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GRC<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GRC\"> </a></td><td>Greece</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GRL<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GRL\"> </a></td><td>Greenland</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GRD<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GRD\"> </a></td><td>Grenada</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GLP<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GLP\"> </a></td><td>Guadeloupe</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GUM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GUM\"> </a></td><td>Guam</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GTM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GTM\"> </a></td><td>Guatemala</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GGY<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GGY\"> </a></td><td>Guernsey</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GIN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GIN\"> </a></td><td>Guinea</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GNB<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GNB\"> </a></td><td>Guinea-Bissau</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GUY<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GUY\"> </a></td><td>Guyana</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-HTI<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-HTI\"> </a></td><td>Haiti</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-HMD<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-HMD\"> </a></td><td>Heard Island and McDonald Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-VAT<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-VAT\"> </a></td><td>Holy See (Vatican City State)</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-HND<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-HND\"> </a></td><td>Honduras</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-HKG<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-HKG\"> </a></td><td>Hong Kong</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-HUN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-HUN\"> </a></td><td>Hungary</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ISL<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ISL\"> </a></td><td>Iceland</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-IND<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-IND\"> </a></td><td>India</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-IDN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-IDN\"> </a></td><td>Indonesia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-IRN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-IRN\"> </a></td><td>Iran, Islamic Republic of</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-IRQ<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-IRQ\"> </a></td><td>Iraq</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-IRL<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-IRL\"> </a></td><td>Ireland</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-IMN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-IMN\"> </a></td><td>Isle of Man</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ISR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ISR\"> </a></td><td>Israel</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ITA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ITA\"> </a></td><td>Italy</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-JAM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-JAM\"> </a></td><td>Jamaica</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-JPN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-JPN\"> </a></td><td>Japan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-JEY<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-JEY\"> </a></td><td>Jersey</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-JOR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-JOR\"> </a></td><td>Jordan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KAZ<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-KAZ\"> </a></td><td>Kazakhstan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KEN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-KEN\"> </a></td><td>Kenya</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KIR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-KIR\"> </a></td><td>Kiribati</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PRK<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-PRK\"> </a></td><td>Korea, Democratic People's Republic of</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KOR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-KOR\"> </a></td><td>Korea, Republic of</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KWT<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-KWT\"> </a></td><td>Kuwait</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KGZ<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-KGZ\"> </a></td><td>Kyrgyzstan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LAO<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-LAO\"> </a></td><td>Lao People's Democratic Republic</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LVA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-LVA\"> </a></td><td>Latvia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LBN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-LBN\"> </a></td><td>Lebanon</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LSO<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-LSO\"> </a></td><td>Lesotho</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LBR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-LBR\"> </a></td><td>Liberia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LBY<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-LBY\"> </a></td><td>Libya</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LIE<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-LIE\"> </a></td><td>Liechtenstein</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LTU<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-LTU\"> </a></td><td>Lithuania</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LUX<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-LUX\"> </a></td><td>Luxembourg</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MAC<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MAC\"> </a></td><td>Macao</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MKD<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MKD\"> </a></td><td>Macedonia, the former Yugoslav Republic of</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MDG<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MDG\"> </a></td><td>Madagascar</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MWI<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MWI\"> </a></td><td>Malawi</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MYS<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MYS\"> </a></td><td>Malaysia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MDV<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MDV\"> </a></td><td>Maldives</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MLI<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MLI\"> </a></td><td>Mali</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MLT<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MLT\"> </a></td><td>Malta</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MHL<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MHL\"> </a></td><td>Marshall Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MTQ<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MTQ\"> </a></td><td>Martinique</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MRT<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MRT\"> </a></td><td>Mauritania</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MUS<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MUS\"> </a></td><td>Mauritius</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MYT<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MYT\"> </a></td><td>Mayotte</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MEX<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MEX\"> </a></td><td>Mexico</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-FSM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-FSM\"> </a></td><td>Micronesia, Federated States of</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MDA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MDA\"> </a></td><td>Moldova, Republic of</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MCO<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MCO\"> </a></td><td>Monaco</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MNG<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MNG\"> </a></td><td>Mongolia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MNE<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MNE\"> </a></td><td>Montenegro</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MSR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MSR\"> </a></td><td>Montserrat</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MAR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MAR\"> </a></td><td>Morocco</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MOZ<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MOZ\"> </a></td><td>Mozambique</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MMR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MMR\"> </a></td><td>Myanmar/Burma</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NAM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-NAM\"> </a></td><td>Namibia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NRU<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-NRU\"> </a></td><td>Nauru</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NPL<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-NPL\"> </a></td><td>Nepal</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NLD<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-NLD\"> </a></td><td>Netherlands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ANT<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ANT\"> </a></td><td>Netherlands Antilles</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NCL<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-NCL\"> </a></td><td>New Caledonia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NZL<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-NZL\"> </a></td><td>New Zealand</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NIC<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-NIC\"> </a></td><td>Nicaragua</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NER<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-NER\"> </a></td><td>Niger</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NGA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-NGA\"> </a></td><td>Nigeria</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NIU<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-NIU\"> </a></td><td>Niue</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NFK<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-NFK\"> </a></td><td>Norfolk Island</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MNP<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-MNP\"> </a></td><td>Northern Mariana Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NOR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-NOR\"> </a></td><td>Norway</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-OMN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-OMN\"> </a></td><td>Oman</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PAK<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-PAK\"> </a></td><td>Pakistan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PLW<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-PLW\"> </a></td><td>Palau</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PSE<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-PSE\"> </a></td><td>Palestinian Territory, Occupied</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PAN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-PAN\"> </a></td><td>Panama</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PNG<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-PNG\"> </a></td><td>Papua New Guinea</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PRY<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-PRY\"> </a></td><td>Paraguay</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PER<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-PER\"> </a></td><td>Peru</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PHL<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-PHL\"> </a></td><td>Philippines</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PCN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-PCN\"> </a></td><td>Pitcairn</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-POL<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-POL\"> </a></td><td>Poland</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PRT<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-PRT\"> </a></td><td>Portugal</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PRI<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-PRI\"> </a></td><td>Puerto Rico</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-QAT<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-QAT\"> </a></td><td>Qatar</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-REU<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-REU\"> </a></td><td>Réunion</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ROU<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ROU\"> </a></td><td>Romania</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-RUS<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-RUS\"> </a></td><td>Russia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-RWA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-RWA\"> </a></td><td>Rwanda</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SHN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SHN\"> </a></td><td>Saint Helena, Ascension and Tristan da Cunha</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KNA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-KNA\"> </a></td><td>Saint Kitts and Nevis</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LCA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-LCA\"> </a></td><td>Saint Lucia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SPM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SPM\"> </a></td><td>Saint Pierre and Miquelon</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-VCT<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-VCT\"> </a></td><td>Saint Vincent and the Grenadines</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-WSM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-WSM\"> </a></td><td>Samoa</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SMR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SMR\"> </a></td><td>San Marino</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-STP<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-STP\"> </a></td><td>Sao Tome and Principe</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SAU<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SAU\"> </a></td><td>Saudi Arabia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SEN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SEN\"> </a></td><td>Senegal</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SRB<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SRB\"> </a></td><td>Serbia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SYC<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SYC\"> </a></td><td>Seychelles</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SLE<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SLE\"> </a></td><td>Sierra Leone</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SGP<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SGP\"> </a></td><td>Singapore</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SVK<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SVK\"> </a></td><td>Slovakia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SVN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SVN\"> </a></td><td>Slovenia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SLB<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SLB\"> </a></td><td>Solomon Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SOM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SOM\"> </a></td><td>Somalia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ZAF<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ZAF\"> </a></td><td>South Africa</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SGS<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SGS\"> </a></td><td>South Georgia and the South Sandwich Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ESP<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ESP\"> </a></td><td>Spain</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LKA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-LKA\"> </a></td><td>Sri Lanka</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SDN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SDN\"> </a></td><td>Sudan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SUR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SUR\"> </a></td><td>Suriname</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SJM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SJM\"> </a></td><td>Svalbard and Jan Mayen</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SWZ<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SWZ\"> </a></td><td>Swaziland</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SWE<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SWE\"> </a></td><td>Sweden</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CHE<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-CHE\"> </a></td><td>Switzerland</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SYR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-SYR\"> </a></td><td>Syrian Arab Republic</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TWN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-TWN\"> </a></td><td>Taiwan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TJK<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-TJK\"> </a></td><td>Tajikistan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TZA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-TZA\"> </a></td><td>Tanzania, United Republic of</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-THA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-THA\"> </a></td><td>Thailand</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TLS<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-TLS\"> </a></td><td>Timor-Leste</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TGO<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-TGO\"> </a></td><td>Togo</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TKL<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-TKL\"> </a></td><td>Tokelau</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TON<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-TON\"> </a></td><td>Tonga</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TTO<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-TTO\"> </a></td><td>Trinidad and Tobago</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TUN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-TUN\"> </a></td><td>Tunisia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TUR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-TUR\"> </a></td><td>Turkey</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TKM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-TKM\"> </a></td><td>Turkmenistan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TCA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-TCA\"> </a></td><td>Turks and Caicos Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TUV<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-TUV\"> </a></td><td>Tuvalu</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-UGA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-UGA\"> </a></td><td>Uganda</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-UKR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-UKR\"> </a></td><td>Ukraine</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ARE<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ARE\"> </a></td><td>United Arab Emirates</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GBR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-GBR\"> </a></td><td>United Kingdom</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-USA<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-USA\"> </a></td><td>United States</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-UMI<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-UMI\"> </a></td><td>United States Minor Outlying Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-URY<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-URY\"> </a></td><td>Uruguay</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-UZB<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-UZB\"> </a></td><td>Uzbekistan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-VUT<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-VUT\"> </a></td><td>Vanuatu</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-VEN<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-VEN\"> </a></td><td>Venezuela</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-VNM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-VNM\"> </a></td><td>Vietnam</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-VGB<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-VGB\"> </a></td><td>Virgin Islands, British</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-VIR<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-VIR\"> </a></td><td>Virgin Islands, U.S.</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-WLF<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-WLF\"> </a></td><td>Wallis and Futuna</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ESH<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ESH\"> </a></td><td>Western Sahara</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-YEM<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-YEM\"> </a></td><td>Yemen</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ZMB<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ZMB\"> </a></td><td>Zambia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ZWE<a name=\"passport-uri-http.58.47.47hl7.46org.47fhir.47sid.47passport-ZWE\"> </a></td><td>Zimbabwe</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://fhir.health.gov.il/cs/passport-uri"];
+  fhir:CodeSystem.version [ fhir:value "4.1.0"];
+  fhir:CodeSystem.name [ fhir:value "PassportUri"];
+  fhir:CodeSystem.title [ fhir:value "Country Code URIs"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2022-04-25T22:05:39+03:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kippi Bordowitz" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "amos@outburn.co.il" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "A country specific URI for passport numbers"];
+  fhir:CodeSystem.valueSet [
+     fhir:value "http://fhir.health.gov.il/ValueSet/passport-uri";
+     fhir:link <http://fhir.health.gov.il/ValueSet/passport-uri>
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "243"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-AFG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Afghanistan" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ALB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Albania" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-DZA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Algeria" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ASM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "American Samoa" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-AND" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Andorra" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-AGO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Angola" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-AIA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anguilla" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ATA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Antarctica" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ATG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Antigua and Barbuda" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ARG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Argentina" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ARM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Armenia" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ABW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Aruba" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-AUS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Australia" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-AUT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Austria" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-AZE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Azerbaijan" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BHS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bahamas" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BHR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bahrain" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BGD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bangladesh" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BRB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Barbados" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BLR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Belarus" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BEL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Belgium" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BLZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Belize" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BEN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Benin" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BMU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bermuda" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BTN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bhutan" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BOL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bolivia" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BIH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bosnia and Herzegovina" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BWA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Botswana" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BVT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bouvet Island" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BRA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Brazil" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-IOT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "British Indian Ocean Territory" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BRN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Brunei" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BGR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bulgaria" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BFA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Burkina Faso" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-BDI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Burundi" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-KHM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cambodia" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CMR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cameroon" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CAN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Canada" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CPV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cape Verde" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CYM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cayman Islands" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CAF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Central African Republic" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-TCD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chad" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CHL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chile" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CHN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "China" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CXR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Christmas Island" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CCK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cocos (Keeling) Islands" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-COL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Colombia" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-COM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Comoros" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-COG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Congo" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-COD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Congo, the Democratic Republic of the" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-COK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cook Islands" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CRI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Costa Rica" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CIV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ivory Coast" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-HRV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Croatia" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CUB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cuba" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CYP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cyprus" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CZE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Czech Republic" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-DNK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Denmark" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-DJI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Djibouti" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-DMA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dominica" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-DOM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dominican Republic" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ECU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ecuador" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-EGY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Egypt" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SLV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "El Salvador" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GNQ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Equatorial Guinea" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ERI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eritrea" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-EST" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Estonia" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ETH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ethiopia" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-FLK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Falkland Islands (Malvinas)" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-FRO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Faroe Islands" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-FJI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fiji" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-FIN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Finland" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-FRA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "France" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GUF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "French Guiana" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-PYF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "French Polynesia" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ATF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "French Southern Territories" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GAB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gabon" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GMB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gambia" ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GEO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Georgia" ]
+  ], [
+     fhir:index 79;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-DEU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Germany" ]
+  ], [
+     fhir:index 80;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GHA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ghana" ]
+  ], [
+     fhir:index 81;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GIB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gibraltar" ]
+  ], [
+     fhir:index 82;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GRC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Greece" ]
+  ], [
+     fhir:index 83;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GRL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Greenland" ]
+  ], [
+     fhir:index 84;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GRD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grenada" ]
+  ], [
+     fhir:index 85;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GLP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Guadeloupe" ]
+  ], [
+     fhir:index 86;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GUM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Guam" ]
+  ], [
+     fhir:index 87;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GTM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Guatemala" ]
+  ], [
+     fhir:index 88;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GGY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Guernsey" ]
+  ], [
+     fhir:index 89;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GIN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Guinea" ]
+  ], [
+     fhir:index 90;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GNB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Guinea-Bissau" ]
+  ], [
+     fhir:index 91;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GUY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Guyana" ]
+  ], [
+     fhir:index 92;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-HTI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Haiti" ]
+  ], [
+     fhir:index 93;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-HMD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Heard Island and McDonald Islands" ]
+  ], [
+     fhir:index 94;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-VAT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Holy See (Vatican City State)" ]
+  ], [
+     fhir:index 95;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-HND" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Honduras" ]
+  ], [
+     fhir:index 96;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-HKG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hong Kong" ]
+  ], [
+     fhir:index 97;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-HUN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hungary" ]
+  ], [
+     fhir:index 98;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ISL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Iceland" ]
+  ], [
+     fhir:index 99;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-IND" ];
+     fhir:CodeSystem.concept.display [ fhir:value "India" ]
+  ], [
+     fhir:index 100;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-IDN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Indonesia" ]
+  ], [
+     fhir:index 101;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-IRN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Iran, Islamic Republic of" ]
+  ], [
+     fhir:index 102;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-IRQ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Iraq" ]
+  ], [
+     fhir:index 103;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-IRL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ireland" ]
+  ], [
+     fhir:index 104;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-IMN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Isle of Man" ]
+  ], [
+     fhir:index 105;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ISR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Israel" ]
+  ], [
+     fhir:index 106;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ITA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Italy" ]
+  ], [
+     fhir:index 107;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-JAM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Jamaica" ]
+  ], [
+     fhir:index 108;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-JPN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Japan" ]
+  ], [
+     fhir:index 109;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-JEY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Jersey" ]
+  ], [
+     fhir:index 110;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-JOR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Jordan" ]
+  ], [
+     fhir:index 111;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-KAZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kazakhstan" ]
+  ], [
+     fhir:index 112;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-KEN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kenya" ]
+  ], [
+     fhir:index 113;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-KIR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kiribati" ]
+  ], [
+     fhir:index 114;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-PRK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Korea, Democratic People's Republic of" ]
+  ], [
+     fhir:index 115;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-KOR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Korea, Republic of" ]
+  ], [
+     fhir:index 116;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-KWT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kuwait" ]
+  ], [
+     fhir:index 117;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-KGZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kyrgyzstan" ]
+  ], [
+     fhir:index 118;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-LAO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lao People's Democratic Republic" ]
+  ], [
+     fhir:index 119;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-LVA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Latvia" ]
+  ], [
+     fhir:index 120;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-LBN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lebanon" ]
+  ], [
+     fhir:index 121;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-LSO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lesotho" ]
+  ], [
+     fhir:index 122;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-LBR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Liberia" ]
+  ], [
+     fhir:index 123;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-LBY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Libya" ]
+  ], [
+     fhir:index 124;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-LIE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Liechtenstein" ]
+  ], [
+     fhir:index 125;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-LTU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lithuania" ]
+  ], [
+     fhir:index 126;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-LUX" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Luxembourg" ]
+  ], [
+     fhir:index 127;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MAC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Macao" ]
+  ], [
+     fhir:index 128;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MKD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Macedonia, the former Yugoslav Republic of" ]
+  ], [
+     fhir:index 129;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MDG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Madagascar" ]
+  ], [
+     fhir:index 130;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MWI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Malawi" ]
+  ], [
+     fhir:index 131;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MYS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Malaysia" ]
+  ], [
+     fhir:index 132;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MDV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Maldives" ]
+  ], [
+     fhir:index 133;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MLI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mali" ]
+  ], [
+     fhir:index 134;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MLT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Malta" ]
+  ], [
+     fhir:index 135;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MHL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Marshall Islands" ]
+  ], [
+     fhir:index 136;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MTQ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Martinique" ]
+  ], [
+     fhir:index 137;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MRT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mauritania" ]
+  ], [
+     fhir:index 138;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MUS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mauritius" ]
+  ], [
+     fhir:index 139;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MYT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mayotte" ]
+  ], [
+     fhir:index 140;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MEX" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mexico" ]
+  ], [
+     fhir:index 141;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-FSM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Micronesia, Federated States of" ]
+  ], [
+     fhir:index 142;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MDA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Moldova, Republic of" ]
+  ], [
+     fhir:index 143;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MCO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Monaco" ]
+  ], [
+     fhir:index 144;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MNG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mongolia" ]
+  ], [
+     fhir:index 145;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MNE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Montenegro" ]
+  ], [
+     fhir:index 146;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MSR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Montserrat" ]
+  ], [
+     fhir:index 147;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MAR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Morocco" ]
+  ], [
+     fhir:index 148;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MOZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mozambique" ]
+  ], [
+     fhir:index 149;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MMR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Myanmar/Burma" ]
+  ], [
+     fhir:index 150;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-NAM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Namibia" ]
+  ], [
+     fhir:index 151;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-NRU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nauru" ]
+  ], [
+     fhir:index 152;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-NPL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nepal" ]
+  ], [
+     fhir:index 153;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-NLD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Netherlands" ]
+  ], [
+     fhir:index 154;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ANT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Netherlands Antilles" ]
+  ], [
+     fhir:index 155;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-NCL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "New Caledonia" ]
+  ], [
+     fhir:index 156;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-NZL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "New Zealand" ]
+  ], [
+     fhir:index 157;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-NIC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nicaragua" ]
+  ], [
+     fhir:index 158;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-NER" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Niger" ]
+  ], [
+     fhir:index 159;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-NGA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nigeria" ]
+  ], [
+     fhir:index 160;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-NIU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Niue" ]
+  ], [
+     fhir:index 161;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-NFK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Norfolk Island" ]
+  ], [
+     fhir:index 162;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-MNP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Northern Mariana Islands" ]
+  ], [
+     fhir:index 163;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-NOR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Norway" ]
+  ], [
+     fhir:index 164;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-OMN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oman" ]
+  ], [
+     fhir:index 165;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-PAK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pakistan" ]
+  ], [
+     fhir:index 166;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-PLW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Palau" ]
+  ], [
+     fhir:index 167;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-PSE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Palestinian Territory, Occupied" ]
+  ], [
+     fhir:index 168;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-PAN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Panama" ]
+  ], [
+     fhir:index 169;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-PNG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Papua New Guinea" ]
+  ], [
+     fhir:index 170;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-PRY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Paraguay" ]
+  ], [
+     fhir:index 171;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-PER" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Peru" ]
+  ], [
+     fhir:index 172;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-PHL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Philippines" ]
+  ], [
+     fhir:index 173;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-PCN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pitcairn" ]
+  ], [
+     fhir:index 174;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-POL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Poland" ]
+  ], [
+     fhir:index 175;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-PRT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Portugal" ]
+  ], [
+     fhir:index 176;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-PRI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Puerto Rico" ]
+  ], [
+     fhir:index 177;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-QAT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Qatar" ]
+  ], [
+     fhir:index 178;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-REU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Réunion" ]
+  ], [
+     fhir:index 179;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ROU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Romania" ]
+  ], [
+     fhir:index 180;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-RUS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Russia" ]
+  ], [
+     fhir:index 181;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-RWA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rwanda" ]
+  ], [
+     fhir:index 182;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SHN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Saint Helena, Ascension and Tristan da Cunha" ]
+  ], [
+     fhir:index 183;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-KNA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Saint Kitts and Nevis" ]
+  ], [
+     fhir:index 184;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-LCA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Saint Lucia" ]
+  ], [
+     fhir:index 185;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SPM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Saint Pierre and Miquelon" ]
+  ], [
+     fhir:index 186;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-VCT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Saint Vincent and the Grenadines" ]
+  ], [
+     fhir:index 187;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-WSM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Samoa" ]
+  ], [
+     fhir:index 188;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SMR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "San Marino" ]
+  ], [
+     fhir:index 189;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-STP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sao Tome and Principe" ]
+  ], [
+     fhir:index 190;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SAU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Saudi Arabia" ]
+  ], [
+     fhir:index 191;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SEN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Senegal" ]
+  ], [
+     fhir:index 192;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SRB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Serbia" ]
+  ], [
+     fhir:index 193;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SYC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Seychelles" ]
+  ], [
+     fhir:index 194;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SLE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sierra Leone" ]
+  ], [
+     fhir:index 195;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SGP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Singapore" ]
+  ], [
+     fhir:index 196;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SVK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Slovakia" ]
+  ], [
+     fhir:index 197;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SVN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Slovenia" ]
+  ], [
+     fhir:index 198;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SLB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solomon Islands" ]
+  ], [
+     fhir:index 199;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SOM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Somalia" ]
+  ], [
+     fhir:index 200;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ZAF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "South Africa" ]
+  ], [
+     fhir:index 201;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SGS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "South Georgia and the South Sandwich Islands" ]
+  ], [
+     fhir:index 202;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ESP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spain" ]
+  ], [
+     fhir:index 203;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-LKA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sri Lanka" ]
+  ], [
+     fhir:index 204;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SDN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sudan" ]
+  ], [
+     fhir:index 205;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SUR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Suriname" ]
+  ], [
+     fhir:index 206;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SJM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Svalbard and Jan Mayen" ]
+  ], [
+     fhir:index 207;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SWZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Swaziland" ]
+  ], [
+     fhir:index 208;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SWE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sweden" ]
+  ], [
+     fhir:index 209;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-CHE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Switzerland" ]
+  ], [
+     fhir:index 210;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-SYR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Syrian Arab Republic" ]
+  ], [
+     fhir:index 211;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-TWN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Taiwan" ]
+  ], [
+     fhir:index 212;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-TJK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tajikistan" ]
+  ], [
+     fhir:index 213;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-TZA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tanzania, United Republic of" ]
+  ], [
+     fhir:index 214;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-THA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Thailand" ]
+  ], [
+     fhir:index 215;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-TLS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Timor-Leste" ]
+  ], [
+     fhir:index 216;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-TGO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Togo" ]
+  ], [
+     fhir:index 217;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-TKL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tokelau" ]
+  ], [
+     fhir:index 218;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-TON" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tonga" ]
+  ], [
+     fhir:index 219;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-TTO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Trinidad and Tobago" ]
+  ], [
+     fhir:index 220;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-TUN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tunisia" ]
+  ], [
+     fhir:index 221;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-TUR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Turkey" ]
+  ], [
+     fhir:index 222;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-TKM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Turkmenistan" ]
+  ], [
+     fhir:index 223;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-TCA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Turks and Caicos Islands" ]
+  ], [
+     fhir:index 224;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-TUV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tuvalu" ]
+  ], [
+     fhir:index 225;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-UGA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Uganda" ]
+  ], [
+     fhir:index 226;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-UKR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ukraine" ]
+  ], [
+     fhir:index 227;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ARE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "United Arab Emirates" ]
+  ], [
+     fhir:index 228;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-GBR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "United Kingdom" ]
+  ], [
+     fhir:index 229;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-USA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "United States" ]
+  ], [
+     fhir:index 230;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-UMI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "United States Minor Outlying Islands" ]
+  ], [
+     fhir:index 231;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-URY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Uruguay" ]
+  ], [
+     fhir:index 232;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-UZB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Uzbekistan" ]
+  ], [
+     fhir:index 233;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-VUT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vanuatu" ]
+  ], [
+     fhir:index 234;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-VEN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Venezuela" ]
+  ], [
+     fhir:index 235;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-VNM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vietnam" ]
+  ], [
+     fhir:index 236;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-VGB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Virgin Islands, British" ]
+  ], [
+     fhir:index 237;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-VIR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Virgin Islands, U.S." ]
+  ], [
+     fhir:index 238;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-WLF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Wallis and Futuna" ]
+  ], [
+     fhir:index 239;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ESH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Western Sahara" ]
+  ], [
+     fhir:index 240;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-YEM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Yemen" ]
+  ], [
+     fhir:index 241;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ZMB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zambia" ]
+  ], [
+     fhir:index 242;
+     fhir:CodeSystem.concept.code [ fhir:value "http://hl7.org/fhir/sid/passport-ZWE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zimbabwe" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/passport-uri.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

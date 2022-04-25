@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="test-myPatient"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/my-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">ddd</div>
+  </text>
+  <identifier>
+    <use value="old"/>
+    <system value="http://fhir.health.gov.il/identifier/il-national-id"/>
+    <value value="000000054"/>
+  </identifier>
+  <identifier>
+    <system value="http://fhir.health.gov.il/identifier/il-national-id"/>
+    <value value="000000018"/>
+  </identifier>
+  <identifier>
+    <system value="http://fhir.health.gov.il/identifier/il-national-id"/>
+    <value value="000000036"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <text value="תddd"/>
+    <family value="ddd"/>
+    <given value="ddd"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="052467911"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="Israel@example.com"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="2003-04-17"/>
+  <deceasedBoolean value="false"/>
+  <address>
+    <use value="home"/>
+    <type value="physical"/>
+    <text value="אלכסנדר פן 1א' דירה 4 תל אביב"/>
+    <line value="אלכסנדר פן 1א"/>
+    <city value="תל אביב"/>
+  </address>
+</Patient>

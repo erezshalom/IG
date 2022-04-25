@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="passport-uri"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-passport-uri.html"><code>http://fhir.health.gov.il/cs/passport-uri</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/passport-uri"/>
+  <version value="4.1.0"/>
+  <name value="PassportUri"/>
+  <title value="Passport URIs"/>
+  <status value="draft"/>
+  <date value="2022-04-25T22:05:39+03:00"/>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="amos@outburn.co.il"/>
+    </telecom>
+  </contact>
+  <description value="A country specific URI for passport numbers"/>
+  <compose>
+    <include>
+      <system value="http://fhir.health.gov.il/cs/passport-uri"/>
+    </include>
+  </compose>
+</ValueSet>
